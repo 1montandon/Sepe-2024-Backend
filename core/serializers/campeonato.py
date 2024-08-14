@@ -1,20 +1,20 @@
 from rest_framework.serializers import ModelSerializer
-from .core.models import Campeonato
+from core.models import Campeonato
 
 class CampeonatoDetailSerializer(ModelSerializer):
     class Meta:
-        model = System
+        model = Campeonato
         fields: list[str] = [
             "id",
-            "name",
+            "nome",
             "ano",
         ]
           
 
 class CampeonatoWriteSerializer(ModelSerializer):
     class Meta:
-        model = System
+        model = Campeonato
         fields: list[str] = [
-            "name",
+            "nome",
             "ano",
         ]
