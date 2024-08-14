@@ -54,3 +54,4 @@ class UserAdmin(BaseUserAdmin):
 admin.site.register(models.User, UserAdmin)
 admin.site.register(models.Campeonato)
 admin.site.register(models.Time)
+admin.site.register(models.Rodada)
