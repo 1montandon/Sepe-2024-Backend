@@ -12,6 +12,7 @@ class TimeDetailSerializer(ModelSerializer):
             "vitoria",
             "derrota",
             "pontos",
+            "campeonato"
         ]
           
 
@@ -25,4 +26,5 @@ class TimeWriteSerializer(ModelSerializer):
             "vitoria",
             "derrota",
             "pontos",
+            "campeonato"
         ]

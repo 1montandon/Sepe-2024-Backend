@@ -9,6 +9,7 @@ class RodadaDetailSerializer(ModelSerializer):
             "numero_rodada",
             "data_inicio",
             "data_termino",
+            "campeonato"
         ]
           
 
@@ -19,4 +20,5 @@ class RodadaWriteSerializer(ModelSerializer):
             "numero_rodada",
             "data_inicio",
             "data_termino",
+            "campeonato"
         ]
