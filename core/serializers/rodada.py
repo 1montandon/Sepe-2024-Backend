@@ -9,8 +9,10 @@ class RodadaDetailSerializer(ModelSerializer):
             "numero_rodada",
             "data_inicio",
             "data_termino",
-            "campeonato"
+            "campeonato",
+            "jogos"
         ]
+        depth = 2
           
 
 class RodadaWriteSerializer(ModelSerializer):
