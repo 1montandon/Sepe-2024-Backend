@@ -4,3 +4,4 @@ from .time import Time
 from .rodada import Rodada
 from .jogo import Jogo
 from .jogador import Jogador
+from .time_jogador import TimeJogador

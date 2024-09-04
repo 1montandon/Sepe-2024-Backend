@@ -12,7 +12,6 @@ class JogadorDetailSerializer(ModelSerializer):
             "email",
             "posicao",
             "numero",
-            "time"
         ]
 
 
@@ -25,5 +24,4 @@ class JogadorWriteSerializer(ModelSerializer):
             "email",
             "posicao",
             "numero",
-            "time"
         ]

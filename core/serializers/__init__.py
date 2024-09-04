@@ -4,4 +4,5 @@ from .time import TimeWriteSerializer, TimeDetailSerializer
 from .rodada import RodadaDetailSerializer, RodadaWriteSerializer
 from .jogo import JogoDetailSerializer, JogoWriteSerializer
 from .jogador import JogadorDetailSerializer, JogadorWriteSerializer
+from .time_jogador import TimeJogadorDetailSerializer, TimeJogadorWriteSerializer
 
