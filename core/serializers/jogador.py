@@ -1,8 +1,14 @@
-from rest_framework.serializers import ModelSerializer
+from rest_framework.serializers import ModelSerializer, SlugRelatedField
+
+from uploader.models import Image
+from uploader.serializers import ImageSerializer
+
 from core.models import Jogador
 
 
 class JogadorDetailSerializer(ModelSerializer):
+    foto = ImageSerializer(required=False)
+
     class Meta:
         model = Jogador
         fields: list[str] = [
@@ -12,10 +18,19 @@ class JogadorDetailSerializer(ModelSerializer):
             "email",
             "posicao",
             "numero",
+            "foto",
         ]
 
 
 class JogadorWriteSerializer(ModelSerializer):
+    foto_attachment_key = SlugRelatedField(
+        source="escudo",
+        queryset=Image.objects.all(),
+        slug_field="attachment_key",
+        required=False,
+        write_only=True,
+    )
+
     class Meta:
         model = Jogador
         fields: list[str] = [
@@ -24,4 +39,5 @@ class JogadorWriteSerializer(ModelSerializer):
             "email",
             "posicao",
             "numero",
+            "foto_attachment_key",
         ]

@@ -1,8 +1,7 @@
 from django.db import models
 from uploader.models import Image
-
-
 from core.models import Campeonato
+
 
 class Time(models.Model):
     nome = models.CharField(max_length=100)
