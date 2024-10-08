@@ -32,8 +32,6 @@ class JogoWriteSerializer(ModelSerializer):
             "rodada",
             "time_mandante",
             "time_visitante",
-            "time_mandante_escudo",
-            "time_visitante_escudo",
             "gols",
             "cartoes"           
 ]

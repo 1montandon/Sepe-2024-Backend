@@ -9,8 +9,6 @@ class Jogo(models.Model):
     rodada = models.ForeignKey(Rodada, on_delete=models.PROTECT, related_name="jogos")
     time_mandante = models.ForeignKey(Time, on_delete=models.PROTECT, related_name="jogos_mandante")
     time_visitante = models.ForeignKey(Time, on_delete=models.PROTECT, related_name="jogos_visitante")
-    time_mandante_escudo = models.ForeignKey(Time, on_delete=models.PROTECT, related_name="time_mandante")
-    time_visitante_escudo = models.ForeignKey(Time, on_delete=models.PROTECT, related_name="time_visitante")
     gols = models.JSONField(null=True, blank=True)
     cartoes = models.JSONField(null=True, blank=True)
 
