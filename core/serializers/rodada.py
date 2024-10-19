@@ -1,7 +1,9 @@
 from rest_framework.serializers import ModelSerializer
 from core.models import Rodada
+from core.serializers.jogo import JogoDetailSerializer
 
 class RodadaDetailSerializer(ModelSerializer):
+    jogos = JogoDetailSerializer(many=True)
     class Meta:
         model = Rodada
         fields: list[str] = [
@@ -12,7 +14,6 @@ class RodadaDetailSerializer(ModelSerializer):
             "campeonato",
             "jogos"
         ]
-        depth = 2
           
 
 class RodadaWriteSerializer(ModelSerializer):

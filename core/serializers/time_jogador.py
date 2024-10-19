@@ -12,6 +12,7 @@ class TimeJogadorDetailSerializer(ModelSerializer):
             "jogador",
             "time",
         ]
+        depth = 2
 
 class TimeJogadorWriteSerializer(ModelSerializer):
     class Meta:
