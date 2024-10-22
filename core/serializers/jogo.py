@@ -1,9 +1,12 @@
 from rest_framework.serializers import ModelSerializer, CharField
 from core.models import Jogo
+from core.serializers.time import TimeListSerializer
 
 class JogoDetailSerializer(ModelSerializer):
-    time_mandante = CharField(source='time_mandante.nome')
-    time_visitante = CharField(source='time_visitante.nome')
+    # time_mandante = CharField(source='time_mandante.nome')
+    # time_visitante = CharField(source='time_visitante.nome')
+    time_visitante = TimeListSerializer()
+    time_mandante = TimeListSerializer()
     time_mandante_escudo = CharField(source='time_mandante.escudo.url')
     time_visitante_escudo = CharField(source='time_visitante.escudo.url')
     class Meta:

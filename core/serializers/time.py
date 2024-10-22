@@ -11,6 +11,13 @@ class JogadorTimeSerializer(ModelSerializer):
         fields = ('jogador',)
         depth = 2
 
+class TimeListSerializer(ModelSerializer):
+    class Meta:
+        model = Time
+        fields = [
+            "id",
+            "nome"
+        ]
 
 class TimeDetailSerializer(ModelSerializer):
     escudo = ImageSerializer(required=False)
