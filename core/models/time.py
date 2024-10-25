@@ -5,11 +5,11 @@ from core.models import Campeonato
 
 class Time(models.Model):
     nome = models.CharField(max_length=100)
-    gols_pro = models.IntegerField(blank=True, null=True)
-    gols_contra = models.IntegerField(blank=True, null=True)
-    vitoria = models.IntegerField(blank=True, null=True)
-    derrota = models.IntegerField(blank=True, null=True)
-    pontos = models.IntegerField(blank=True, null=True)
+    gols_pro = models.IntegerField(blank=True, null=True, default=0)
+    gols_contra = models.IntegerField(blank=True, null=True, default=0)
+    vitoria = models.IntegerField(blank=True, null=True, default=0)
+    derrota = models.IntegerField(blank=True, null=True, default=0)
+    pontos = models.IntegerField(blank=True, null=True, default=0)
     campeonato = models.ForeignKey(Campeonato, on_delete=models.PROTECT, related_name="time", null=True, blank=True)
     escudo = models.ForeignKey(
         Image,
