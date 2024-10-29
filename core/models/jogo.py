@@ -76,9 +76,13 @@ def vitoria_derrota(sender, instance, **kwargs):
     time_mandante.vitoria = 0
     time_mandante.derrota = 0
     time_mandante.empate = 0
+    time_mandante.pontos = 0
+
     time_visitante.vitoria = 0
     time_visitante.derrota = 0
     time_visitante.empate = 0
+    time_visitante.pontos = 0
+
     
  
 
@@ -98,6 +102,7 @@ def vitoria_derrota(sender, instance, **kwargs):
                 print("prints dos zikas do bagulho !!!!!", timeM_gols, timeV_gols)
         if timeM_gols > timeV_gols:
                 time_mandante.vitoria += 1
+                time_mandante.pontos += 3
                 timeM_gols = 0
                 timeV_gols = 0
                 time_mandante.save()
@@ -108,6 +113,7 @@ def vitoria_derrota(sender, instance, **kwargs):
                 time_mandante.save()
         else:
                 time_mandante.empate += 1
+                time_mandante.pontos += 1
                 timeM_gols = 0
                 timeV_gols = 0
                 time_mandante.save()
@@ -132,9 +138,11 @@ def vitoria_derrota(sender, instance, **kwargs):
                 time_visitante.vitoria = time_visitante.vitoria + 1
                 timeM_gols = 0
                 timeV_gols = 0
+                time_visitante.pontos += 3 
                 time_visitante.save()
         else:
                 time_visitante.empate += 1
                 timeM_gols = 0
                 timeV_gols = 0
+                time_visitante.pontos += 1
                 time_visitante.save()
