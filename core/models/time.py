@@ -8,6 +8,7 @@ class Time(models.Model):
     gols_pro = models.IntegerField(blank=True, null=True, default=0)
     gols_contra = models.IntegerField(blank=True, null=True, default=0)
     vitoria = models.IntegerField(blank=True, null=True, default=0)
+    empate = models.IntegerField(blank=True, null=True, default=0)
     derrota = models.IntegerField(blank=True, null=True, default=0)
     pontos = models.IntegerField(blank=True, null=True, default=0)
     campeonato = models.ForeignKey(Campeonato, on_delete=models.PROTECT, related_name="time", null=True, blank=True)
