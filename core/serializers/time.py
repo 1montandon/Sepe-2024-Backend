@@ -1,9 +1,10 @@
-from rest_framework.serializers import ModelSerializer, SlugRelatedField, CharField
+from rest_framework.serializers import ModelSerializer, SlugRelatedField, CharField, SerializerMethodField
+from itertools import chain
 
 from uploader.models import Image
 from uploader.serializers import ImageSerializer
 
-from core.models import Time, TimeJogador
+from core.models import Time, TimeJogador, Jogo
 
 class JogadorTimeSerializer(ModelSerializer):
     class Meta:
@@ -22,6 +23,21 @@ class TimeListSerializer(ModelSerializer):
 class TimeDetailSerializer(ModelSerializer):
     escudo = ImageSerializer(required=False)
     jogadores = JogadorTimeSerializer(many=True)
+    ultimos_jogos = SerializerMethodField()
+
+    def get_ultimos_jogos(self, object):
+        mandante = object.jogos_mandante.order_by('-id') if len(object.jogos_mandante.order_by('-id')) < 5 else object.jogos_mandante.order_by('-id')[:5]
+        visitante = object.jogos_visitante.order_by('-id') if len(object.jogos_visitante.order_by('-id')) < 5 else object.jogos_visitante.order_by('-id')[:5]
+        jogos = list(chain(mandante, visitante))
+        resultados = []
+        for jogo in jogos:
+            breakpoint()
+        return [1, 0, -1, 1, 1]
+        
+        # print(object.id)
+        # jogos = Jogo.objects.filter(Q(time_mandante__id=object.id | time_visitante__id=object.id))
+        # return []
+
     
     class Meta:
         model = Time
@@ -36,7 +52,8 @@ class TimeDetailSerializer(ModelSerializer):
             "pontos", 
             "campeonato", 
             "escudo", 
-            "jogadores"
+            "jogadores",
+            "ultimos_jogos"
         ]
 
 

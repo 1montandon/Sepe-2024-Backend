@@ -13,6 +13,7 @@ class Jogo(models.Model):
     time_mandante = models.ForeignKey(Time, on_delete=models.PROTECT, related_name="jogos_mandante")
     time_visitante = models.ForeignKey(Time, on_delete=models.PROTECT, related_name="jogos_visitante")
     gols = models.JSONField(null=True, blank=True)
+    vencedor = models.ForeignKey(Time, on_delete=models.PROTECT, related_name="vitorias", blank=True, null=True)
     cartoes = models.JSONField(null=True, blank=True)
 
 
@@ -101,15 +102,19 @@ def vitoria_derrota(sender, instance, **kwargs):
                     timeV_gols += 1
                 print("prints dos zikas do bagulho !!!!!", timeM_gols, timeV_gols)
         if timeM_gols > timeV_gols:
+                jogo.resultado = time_mandante
                 time_mandante.vitoria += 1
                 time_mandante.pontos += 3
                 timeM_gols = 0
                 timeV_gols = 0
+                jogo.resultado.save()
                 time_mandante.save()
         elif timeM_gols < timeV_gols:
+                jogo.resultado = time_visitante
                 time_mandante.derrota += 1
                 timeM_gols = 0
                 timeV_gols = 0
+                jogo.resultado.save()
                 time_mandante.save()
         else:
                 time_mandante.empate += 1
@@ -130,15 +135,19 @@ def vitoria_derrota(sender, instance, **kwargs):
                     timeV_gols += 1
                 print("prints dos zikas do bagulho !!!!!", timeM_gols, timeV_gols)
         if timeM_gols > timeV_gols:
+                jogo.resultado = time_visitante
                 time_visitante.derrota = time_visitante.derrota + 1
                 timeM_gols = 0
                 timeV_gols = 0
+                jogo.resultado.save()
                 time_visitante.save()
         elif timeM_gols < timeV_gols:
+                jogo.resultado = time_mandante
                 time_visitante.vitoria = time_visitante.vitoria + 1
                 timeM_gols = 0
                 timeV_gols = 0
                 time_visitante.pontos += 3 
+                jogo.resultado.save()
                 time_visitante.save()
         else:
                 time_visitante.empate += 1
