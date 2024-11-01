@@ -10,7 +10,7 @@ from rest_framework import status
 @extend_schema(tags=["Jogo"])
 class JogoViewSet(ModelViewSet):
     queryset = Jogo.objects.all()
-    http_method_names = ["get", "post", "put", "delete"]
+    http_method_names = ["get", "post", "put", "delete", "patch"]
     def get_serializer_class(self):
         if self.action in ["list", "retrieve"]:
             return JogoDetailSerializer
