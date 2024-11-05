@@ -25,16 +25,21 @@ class TimeListSerializer(ModelSerializer):
 class TimeDetailSerializer(ModelSerializer):
     escudo = ImageSerializer(required=False)
     jogadores = JogadorTimeSerializer(many=True)
-    # ultimos_jogos = SerializerMethodField()
+    ultimos_jogos = SerializerMethodField()
 
-    # def get_ultimos_jogos(self, object):
-    #     mandante = object.jogos_mandante.order_by('-id') if len(object.jogos_mandante.order_by('-id')) < 5 else object.jogos_mandante.order_by('-id')[:5]
-    #     visitante = object.jogos_visitante.order_by('-id') if len(object.jogos_visitante.order_by('-id')) < 5 else object.jogos_visitante.order_by('-id')[:5]
-    #     jogos = list(chain(mandante, visitante))
-    #     resultados = []
-    #     for jogo in jogos:
-    #         breakpoint()
-    #     return [1, 0, -1, 1, 1]
+    def get_ultimos_jogos(self, object):
+        mandante = object.jogos_mandante.order_by('-id') if len(object.jogos_mandante.order_by('-id')) < 5 else object.jogos_mandante.order_by('-id')[:5]
+        visitante = object.jogos_visitante.order_by('-id') if len(object.jogos_visitante.order_by('-id')) < 5 else object.jogos_visitante.order_by('-id')[:5]
+        jogos = list(chain(mandante, visitante))
+        resultados = []
+        for jogo in jogos:
+            if jogo.vencedor == object.id:
+                resultados.append(1)
+            elif jogo.vencedor == None:
+                resultados.append(0)
+            else:
+                resultados.append({-1})
+        return resultados
         
         # print(object.id)
         # jogos = Jogo.objects.filter(Q(time_mandante__id=object.id | time_visitante__id=object.id))
@@ -55,7 +60,7 @@ class TimeDetailSerializer(ModelSerializer):
             "campeonato", 
             "escudo", 
             "jogadores",
-            # "ultimos_jogos"
+            "ultimos_jogos"
         ]
 
 

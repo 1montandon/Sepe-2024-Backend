@@ -22,10 +22,26 @@ def vitoria_derrota(sender, instance, **kwargs):
     time_mandante = instance.time_mandante
     time_visitante = instance.time_visitante
 
+    # time_mandante.vitoria = 0
+    # time_mandante.empate = 0
+    # time_mandante.derrota = 0
+    # time_mandante.pontos = 0 
+    # time_visitante.vitoria = 0
+    # time_visitante.empate = 0
+    # time_visitante.derrota = 0
+    # time_visitante.pontos = 0 
     timeM_gols = 0
     timeV_gols = 0 
 
-   
+    # time_mandante.save()
+    # time_visitante.save()
+    
+    jogos_mandante = list(time_mandante.jogos_mandante.all()) + list(time_mandante.jogos_visitante.all())
+    jogos_visitante = list(time_visitante.jogos_mandante.all()) + list(time_visitante.jogos_visitante.all())
+
+    # print(list(jogos_mandante + jogos_visitante))
+
+    # for jogo in list(jogos_mandante + jogos_visitante):
     for gol in instance.gols:
             if gol is None:
                 continue
@@ -89,7 +105,7 @@ def update_gols(sender, instance, **kwargs):
                 if gol["time"] == time_mandante.id:
                     time_mandante.gols_pro += 1
                     time_mandante.save()
-                elif gol["time"] is not time_mandante.id:
+                else:
                     time_mandante.gols_contra += 1
                     time_mandante.save()
             else:
@@ -105,7 +121,7 @@ def update_gols(sender, instance, **kwargs):
                 if gol["time"] == time_visitante.id:
                     time_visitante.gols_pro += 1
                     time_visitante.save()
-                elif gol["time"] is not time_visitante.id:
+                else:
                     time_visitante.gols_contra += 1
                     time_visitante.save()
             else:
