@@ -25,9 +25,10 @@ def update_create(instance):
     else:
         instance.vencedor = None
 
+    instance.save()
+    # return instance
+
 class JogoDetailSerializer(ModelSerializer):
-    # time_mandante = CharField(source='time_mandante.nome')
-    # time_visitante = CharField(source='time_visitante.nome')
     time_visitante = TimeListSerializer()
     time_mandante = TimeListSerializer()
 
@@ -50,7 +51,8 @@ class JogoWriteSerializer(ModelSerializer):
     class Meta:
         model = Jogo
         fields: list[str] = [
-            "data",''
+            "id",
+            "data",
             "horario",
             "endereco",
             "rodada",
@@ -60,13 +62,38 @@ class JogoWriteSerializer(ModelSerializer):
             "cartoes",
         ]
     def create(self, validated_data):
-        update_create()
-        return 
+        # Create a new instance of Jogo with validated_data
+        instance = Jogo(**validated_data)
+        # ** - unpacks validated_data so that each key-value pair in the dictionary is treated as an individual argument, 
+        # creating a Jogo instance with all the values in validated_data set as attributes on instance. 
+        # This is particularly useful in Django or DRF, where model fields align with dictionary keys after validation, 
+        # allowing you to easily create or update objects.
+        print(Jogo(validated_data["data"]))
+        print(Jogo(validated_data) )
+        print(Jogo(**validated_data).data)
+        print(Jogo(**validated_data))
+        
+        # Process the new instance using update_create
+        update_create(instance)
+        
+        # Save and return the instance
+        return instance
 
     def update(self, instance, validated_data):
-        update_create(instance)
+        print(validated_data)
+        instance.data = validated_data.get('data', instance.data)
+        instance.horario = validated_data.get('horario', instance.horario)
+        instance.endereco = validated_data.get('endereco', instance.endereco)
+        instance.rodada = validated_data.get('rodada', instance.rodada)
+        instance.time_mandante = validated_data.get('time_mandante', instance.time_mandante)
+        instance.time_visitante = validated_data.get('time_visitante', instance.time_visitante)
+        instance.gols = validated_data.get('gols', instance.gols)
+        instance.cartoes = validated_data.get('cartoes', instance.cartoes)
 
-        instance.save()
+        # for attr, value in validated_data.items():
+        #     setattr(instance, attr, value)
+
+        update_create(instance)
         return instance
 
 

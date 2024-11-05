@@ -65,7 +65,6 @@ def vitoria_derrota(sender, instance, **kwargs):
 
 @receiver(post_save, sender=Jogo)
 def update_gols(sender, instance, **kwargs):
-    print(instance.id, "instance")
     time_mandante = instance.time_mandante
     time_visitante = instance.time_visitante
 
@@ -87,7 +86,6 @@ def update_gols(sender, instance, **kwargs):
             if gol is None:
                 continue
             if gol["time"] is not None:
-                print(gol["time"])
                 if gol["time"] == time_mandante.id:
                     time_mandante.gols_pro += 1
                     time_mandante.save()
