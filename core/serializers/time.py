@@ -33,7 +33,7 @@ class TimeDetailSerializer(ModelSerializer):
         jogos = list(chain(mandante, visitante))
         resultados = []
         for jogo in jogos:
-            if jogo.vencedor == object.id:
+            if jogo.vencedor.id == object.id:
                 resultados.append(1)
             elif jogo.vencedor == None:
                 resultados.append(0)
