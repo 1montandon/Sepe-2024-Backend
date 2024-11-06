@@ -26,6 +26,14 @@ class TimeDetailSerializer(ModelSerializer):
     escudo = ImageSerializer(required=False)
     jogadores = JogadorTimeSerializer(many=True)
     ultimos_jogos = SerializerMethodField()
+    jogos = SerializerMethodField()
+
+    def get_jogos(self, object):
+        mandante = object.jogos_mandante.order_by('-id')
+        visitante = object.jogos_visitante.order_by('-id')
+        jogos = len(list(chain(mandante, visitante)))
+        return jogos
+    
 
     def get_ultimos_jogos(self, object):
         mandante = object.jogos_mandante.order_by('-id') if len(object.jogos_mandante.order_by('-id')) < 5 else object.jogos_mandante.order_by('-id')[:5]
@@ -60,7 +68,8 @@ class TimeDetailSerializer(ModelSerializer):
             "campeonato", 
             "escudo", 
             "jogadores",
-            "ultimos_jogos"
+            "ultimos_jogos",
+            "jogos"
         ]
 
 
