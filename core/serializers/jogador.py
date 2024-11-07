@@ -1,4 +1,4 @@
-from rest_framework.serializers import ModelSerializer, SlugRelatedField, CharField
+from rest_framework.serializers import ModelSerializer, SlugRelatedField, CharField, SerializerMethodField
 
 from uploader.models import Image
 from uploader.serializers import ImageSerializer

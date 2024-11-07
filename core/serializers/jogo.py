@@ -13,9 +13,11 @@ def update_create(instance):
         if gol is None:
                 continue
         if gol["time"] is not None:
+            print(time_mandante.id, "aqui viado")
             if gol["time"] == time_mandante.id:
+                print(gol["time"])
                 timeM_gols += 1
-            elif gol["time"] is not time_mandante.id:
+            elif gol["time"] != time_mandante.id:
                 timeV_gols += 1
 
     if timeM_gols > timeV_gols:

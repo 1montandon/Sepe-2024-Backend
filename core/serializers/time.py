@@ -9,7 +9,7 @@ from core.models import Time, TimeJogador, Jogo
 class JogoSerializer(ModelSerializer):
     class Meta:
         model = Jogo
-        fields = '__all__'
+        fields = ('__all__')
         
 class JogadorTimeSerializer(ModelSerializer):
     class Meta:
@@ -48,7 +48,8 @@ class TimeDetailSerializer(ModelSerializer):
         jogos = list(chain(mandante, visitante))
         resultados = []
         for jogo in jogos:
-            if jogo.vencedor.id == object.id:
+            print(jogo.vencedor, object)
+            if jogo.vencedor == object:
                 resultados.append(1)
             elif jogo.vencedor == None:
                 resultados.append(0)
