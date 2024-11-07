@@ -41,7 +41,7 @@ def vitoria_derrota(sender, instance, **kwargs):
 
     # print(list(jogos_mandante + jogos_visitante))
 
-    for jogo in list(jogos_mandante + jogos_visitante):
+    for jogo in jogos_mandante:
         for gol in jogo.gols:
                 if gol is None:
                     continue
@@ -53,29 +53,49 @@ def vitoria_derrota(sender, instance, **kwargs):
                         
         if timeM_gols > timeV_gols:
                     time_mandante.vitoria += 1
-                    time_visitante.derrota += 1
                     time_mandante.pontos += 3
                     timeM_gols = 0
                     timeV_gols = 0
                     time_mandante.save()
-                    time_visitante.save()
-        elif timeM_gols < timeV_gols:
-                    time_visitante.vitoria += 1
+        elif timeV_gols > timeM_gols:
                     time_mandante.derrota += 1
+                    timeM_gols = 0
+                    timeV_gols = 0
+                    time_mandante.save()
+        else:
+                    time_mandante.empate += 1
+                    time_mandante.pontos += 1
+                    timeM_gols = 0
+                    timeV_gols = 0
+                    time_mandante.save()
+
+    for jogo in jogos_visitante:
+        for gol in jogo.gols:
+                if gol is None:
+                    continue
+                if gol["time"] is not None:
+                    if gol["time"] == time_visitante.id:
+                        timeV_gols += 1
+                    elif gol["time"] is not time_visitante.id:
+                        timeM_gols += 1
+                        
+        if timeV_gols > timeM_gols:
+                    time_visitante.vitoria += 1
                     time_visitante.pontos += 3
                     timeM_gols = 0
                     timeV_gols = 0
-                    time_mandante.save()
+                    time_visitante.save()
+        elif timeM_gols > timeV_gols:
+                    time_visitante.derrota += 1
+                    timeM_gols = 0
+                    timeV_gols = 0
                     time_visitante.save()
         else:
-                    time_mandante.empate += 1
                     time_visitante.empate += 1
-                    time_mandante.pontos += 1
                     time_visitante.pontos += 1
                     timeM_gols = 0
                     timeV_gols = 0
-                    time_mandante.save()
-                    time_visitante.save()
+                    time_visitante.save()            
                 
 
 
