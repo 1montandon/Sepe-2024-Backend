@@ -6,6 +6,11 @@ from uploader.serializers import ImageSerializer, ImageListSerializer
 
 from core.models import Time, TimeJogador, Jogo
 
+class JogoSerializer(ModelSerializer):
+    class Meta:
+        model = Jogo
+        fields = '__all__'
+        
 class JogadorTimeSerializer(ModelSerializer):
     class Meta:
         model = TimeJogador
@@ -31,8 +36,10 @@ class TimeDetailSerializer(ModelSerializer):
     def get_jogos(self, object):
         mandante = object.jogos_mandante.order_by('-id')
         visitante = object.jogos_visitante.order_by('-id')
-        jogos = len(list(chain(mandante, visitante)))
-        return jogos
+        jogos = list(chain(mandante, visitante))
+        # Use JogoSerializer to serialize each Jogo instance
+        serializer = JogoSerializer(jogos, many=True)
+        return serializer.data
     
 
     def get_ultimos_jogos(self, object):
