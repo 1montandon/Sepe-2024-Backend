@@ -1,19 +1,32 @@
-from rest_framework.serializers import ModelSerializer, SlugRelatedField, CharField, SerializerMethodField
+from rest_framework.serializers import ModelSerializer, SlugRelatedField, CharField, SerializerMethodField, IntegerField
 
 from uploader.models import Image
-from uploader.serializers import ImageSerializer
+from uploader.serializers import ImageListSerializer
 
 from core.models import Jogador, TimeJogador
 
 class TimeJogadorSerializer(ModelSerializer):
+    id = IntegerField(source="time.id")
+    nome = CharField(source="time.nome")
+    gols_pro = IntegerField(source="time.gols_pro")
+    gols_contra = IntegerField(source="time.gols_contra")
+    vitoria = IntegerField(source="time.vitoria")
+    empate = IntegerField(source="time.empate")
+    derrota = IntegerField(source="time.derrota")
+    pontos = IntegerField(source="time.pontos")
+    campeonato = CharField(source="time.campeonato")
+    escudo = CharField(source="time.escudo.url", required=False)
+
     class Meta:
         model = TimeJogador
-        fields = ('time',)
-        depth = 2
+        fields = (
+            'id', 'nome', 'gols_pro', 'gols_contra', 'vitoria', 'empate',
+            'derrota', 'pontos', 'campeonato', 'escudo',
+        )
 
 
 class JogadorDetailSerializer(ModelSerializer):
-    foto = ImageSerializer(required=False)
+    foto = ImageListSerializer(required=False)
     times = TimeJogadorSerializer(many=True)
 
     class Meta:

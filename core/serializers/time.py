@@ -1,4 +1,4 @@
-from rest_framework.serializers import ModelSerializer, SlugRelatedField, CharField, SerializerMethodField
+from rest_framework.serializers import ModelSerializer, SlugRelatedField, CharField, SerializerMethodField, IntegerField
 from itertools import chain
 
 from uploader.models import Image
@@ -12,10 +12,16 @@ class JogoSerializer(ModelSerializer):
         fields = ('__all__')
         
 class JogadorTimeSerializer(ModelSerializer):
+    id = IntegerField(source="jogador.id")
+    nome = CharField(source="jogador.nome")
+    idade = IntegerField(source="jogador.idade")
+    email = CharField(source="jogador.email")
+    numero = IntegerField(source="jogador.numero")
+    posicao = IntegerField(source="jogador.posicao")
+    foto = CharField(source="jogador.foto.url", required=False)
     class Meta:
         model = TimeJogador
-        fields = ('jogador',)
-        depth = 2
+        fields = ('id', 'nome', 'idade', 'email', 'numero', 'posicao', 'foto')
 
 class TimeListSerializer(ModelSerializer):
     escudo = ImageListSerializer()
@@ -36,9 +42,10 @@ class TimeDetailSerializer(ModelSerializer):
     def get_jogos(self, object):
         mandante = object.jogos_mandante.order_by('-id')
         visitante = object.jogos_visitante.order_by('-id')
-        jogos = list(chain(mandante, visitante))
+        jogos = list(chain(mandante, visitante)) #Antes era so usado para pegar o length do jogos
         # Use JogoSerializer to serialize each Jogo instance
         serializer = JogoSerializer(jogos, many=True)
+        print("AQUI BURRO",serializer, serializer.data)
         return serializer.data
     
 
