@@ -3,6 +3,11 @@ from core.models import Jogo
 from core.serializers.time import TimeListSerializer
 
 def update_create(instance):
+    if instance.gols is None:
+        # Inicialize `gols` como uma lista vazia ou retorne uma mensagem de erro, dependendo do caso de uso.
+        instance.gols = []  # ou retorne um erro se necessário
+
+        
     time_mandante = instance.time_mandante
     time_visitante = instance.time_visitante
 
