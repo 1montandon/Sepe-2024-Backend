@@ -2500,7 +2500,7 @@
   "model": "admin.logentry",
   "pk": 193,
   "fields": {
-    "action_time": "2024-11-07T12:11:40.000Z",
+    "action_time": "2024-11-07T12:11:40Z",
     "user": 1,
     "content_type": 14,
     "object_id": "32",
@@ -6391,6 +6391,22 @@
   }
 },
 {
+  "model": "core.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$07mrhUx15K5Mh8BvYef8Z3$35how53GGXnfT6PZVapdCgaEbn0cIjEe3SULBC9VFFY=",
+    "last_login": null,
+    "is_superuser": true,
+    "passage_id": "8e8904ca-fc2f-4b59-8c11-6630ac92f60a",
+    "email": "monta@gmail.com",
+    "name": "",
+    "is_active": true,
+    "is_staff": true,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
   "model": "core.campeonato",
   "pk": 1,
   "fields": {
@@ -6451,9 +6467,9 @@
     "gols_pro": 3,
     "gols_contra": 1,
     "vitoria": 1,
-    "empate": 2,
+    "empate": 0,
     "derrota": 0,
-    "pontos": 5,
+    "pontos": 3,
     "campeonato": 1,
     "escudo": 14
   }
@@ -6511,9 +6527,9 @@
     "gols_pro": 2,
     "gols_contra": 0,
     "vitoria": 1,
-    "empate": 2,
+    "empate": 0,
     "derrota": 0,
-    "pontos": 5,
+    "pontos": 3,
     "campeonato": 1,
     "escudo": 17
   }
@@ -6540,14 +6556,14 @@
     "time_visitante": 3,
     "gols": [
       {
+        "time": 3,
         "gol_pro": true,
-        "jogador": 1,
-        "time": 3
+        "jogador": 1
       },
       {
+        "time": 2,
         "gol_pro": true,
-        "jogador": 1,
-        "time": 2
+        "jogador": 1
       }
     ],
     "vencedor": null,
@@ -6566,14 +6582,14 @@
     "time_visitante": 6,
     "gols": [
       {
+        "time": 9,
         "gol_pro": true,
-        "jogador": 68,
-        "time": 9
+        "jogador": 68
       },
       {
+        "time": 9,
         "gol_pro": true,
-        "jogador": 68,
-        "time": 9
+        "jogador": 68
       }
     ],
     "vencedor": 9,
@@ -6592,24 +6608,24 @@
     "time_visitante": 6,
     "gols": [
       {
-        "jogador": 2,
         "time": 4,
-        "gol_pro": true
+        "gol_pro": true,
+        "jogador": 2
       },
       {
-        "jogador": 2,
         "time": 6,
-        "gol_pro": true
+        "gol_pro": true,
+        "jogador": 2
       },
       {
-        "jogador": 2,
         "time": 4,
-        "gol_pro": true
+        "gol_pro": true,
+        "jogador": 2
       },
       {
-        "jogador": 2,
         "time": 4,
-        "gol_pro": true
+        "gol_pro": true,
+        "jogador": 2
       }
     ],
     "vencedor": 4,
