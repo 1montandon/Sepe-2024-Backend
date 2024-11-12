@@ -5,7 +5,7 @@
 groups = ["default", "dev", "format"]
 strategy = ["inherit_metadata"]
 lock_version = "4.4.2"
-content_hash = "sha256:67556b1f8be677942b84703b6815f021f29ff331469dff026cfabbfb5016f673"
+content_hash = "sha256:ebfd71ac8de6d354646d3c5b92702cd198075dcc589783c60a50fcefd8c8b955"
 
 [[package]]
 name = "asgiref"
@@ -13,9 +13,6 @@ version = "3.8.1"
 requires_python = ">=3.8"
 summary = "ASGI specs, helper code, and adapters"
 groups = ["default"]
-dependencies = [
-    "typing-extensions>=4; python_version < \"3.11\"",
-]
 files = [
     {file = "asgiref-3.8.1-py3-none-any.whl", hash = "sha256:3e1e3ecc849832fe52ccf2cb6686b7a55f82bb1d6aee72a58826471390335e47"},
     {file = "asgiref-3.8.1.tar.gz", hash = "sha256:c343bd80a0bec947a9860adb4c432ffa7db769836c64238fc34bdc3fec84d590"},
@@ -27,9 +24,6 @@ version = "3.2.4"
 requires_python = ">=3.8.0"
 summary = "An abstract syntax tree for Python with inference support."
 groups = ["dev"]
-dependencies = [
-    "typing-extensions>=4.0.0; python_version < \"3.11\"",
-]
 files = [
     {file = "astroid-3.2.4-py3-none-any.whl", hash = "sha256:413658a61eeca6202a59231abb473f932038fbcbf1666587f66d482083413a25"},
     {file = "astroid-3.2.4.tar.gz", hash = "sha256:0e14202810b30da1b735827f78f5157be2bbd4a7a59b7707ca0bfc2fb4c0063a"},
@@ -58,8 +52,6 @@ dependencies = [
     "packaging>=22.0",
     "pathspec>=0.9.0",
     "platformdirs>=2",
-    "tomli>=1.1.0; python_version < \"3.11\"",
-    "typing-extensions>=4.0.1; python_version < \"3.11\"",
 ]
 files = [
     {file = "black-24.8.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:09cdeb74d494ec023ded657f7092ba518e8cf78fa8386155e4a03fdcc44679e6"},
@@ -338,7 +330,7 @@ version = "0.3.8"
 requires_python = ">=3.8"
 summary = "serialize all of Python"
 groups = ["dev"]
-marker = "python_version < \"3.11\""
+marker = "python_version >= \"3.11\""
 files = [
     {file = "dill-0.3.8-py3-none-any.whl", hash = "sha256:c36ca9ffb54365bdd2f8eb3eff7d2a21237f8452b57ace88b1ac615b7e815bd7"},
     {file = "dill-0.3.8.tar.gz", hash = "sha256:3ebe3c479ad625c4553aca177444d89b486b1d84982eeacded644afc0cf797ca"},
@@ -944,11 +936,11 @@ summary = "python code static checker"
 groups = ["dev"]
 dependencies = [
     "astroid<=3.3.0-dev0,>=3.2.4",
-    "dill>=0.2; python_version < \"3.11\"",
+    "dill>=0.3.6; python_version >= \"3.11\"",
+    "dill>=0.3.7; python_version >= \"3.12\"",
     "isort!=5.13.0,<6,>=4.2.5",
     "mccabe<0.8,>=0.6",
     "platformdirs>=2.2.0",
-    "tomli>=1.1.0; python_version < \"3.11\"",
     "tomlkit>=0.10.1",
 ]
 files = [
@@ -1176,18 +1168,6 @@ files = [
 ]
 
 [[package]]
-name = "tomli"
-version = "2.0.1"
-requires_python = ">=3.7"
-summary = "A lil' TOML parser"
-groups = ["dev", "format"]
-marker = "python_version < \"3.11\""
-files = [
-    {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
-    {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
-]
-
-[[package]]
 name = "tomlkit"
 version = "0.13.2"
 requires_python = ">=3.8"
@@ -1203,7 +1183,7 @@ name = "typing-extensions"
 version = "4.12.2"
 requires_python = ">=3.8"
 summary = "Backported and Experimental Type Hints for Python 3.8+"
-groups = ["default", "dev", "format"]
+groups = ["default"]
 files = [
     {file = "typing_extensions-4.12.2-py3-none-any.whl", hash = "sha256:04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d"},
     {file = "typing_extensions-4.12.2.tar.gz", hash = "sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"},
@@ -1233,18 +1213,17 @@ files = [
 
 [[package]]
 name = "uvicorn"
-version = "0.30.6"
+version = "0.32.0"
 requires_python = ">=3.8"
 summary = "The lightning-fast ASGI server."
 groups = ["default"]
 dependencies = [
     "click>=7.0",
     "h11>=0.8",
-    "typing-extensions>=4.0; python_version < \"3.11\"",
 ]
 files = [
-    {file = "uvicorn-0.30.6-py3-none-any.whl", hash = "sha256:65fd46fe3fda5bdc1b03b94eb634923ff18cd35b2f084813ea79d1f103f711b5"},
-    {file = "uvicorn-0.30.6.tar.gz", hash = "sha256:4b15decdda1e72be08209e860a1e10e92439ad5b97cf44cc945fcbee66fc5788"},
+    {file = "uvicorn-0.32.0-py3-none-any.whl", hash = "sha256:60b8f3a5ac027dcd31448f411ced12b5ef452c646f76f02f8cc3f25d8d26fd82"},
+    {file = "uvicorn-0.32.0.tar.gz", hash = "sha256:f78b36b143c16f54ccdb8190d0a26b5f1901fe5a3c777e1ab29f26391af8551e"},
 ]
 
 [[package]]
