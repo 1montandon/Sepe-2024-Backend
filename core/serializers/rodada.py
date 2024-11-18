@@ -9,8 +9,6 @@ class RodadaDetailSerializer(ModelSerializer):
         fields: list[str] = [
             "id",
             "numero_rodada",
-            "data_inicio",
-            "data_termino",
             "campeonato",
             "jogos"
         ]
@@ -21,7 +19,5 @@ class RodadaWriteSerializer(ModelSerializer):
         model = Rodada
         fields: list[str] = [
             "numero_rodada",
-            "data_inicio",
-            "data_termino",
             "campeonato"
         ]

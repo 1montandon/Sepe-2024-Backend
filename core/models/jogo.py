@@ -1,15 +1,15 @@
 from django.db import models
 
-from core.models import Rodada, Time
+from core.models import Rodada, Time, Campeonato
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
 
 class Jogo(models.Model):
-    data = models.DateField()
-    horario = models.TimeField()
-    endereco = models.CharField(max_length=150)
-    rodada = models.ForeignKey(Rodada, on_delete=models.PROTECT, related_name="jogos")
+    data = models.DateField(blank=True)
+    horario = models.TimeField(blank=True)
+    endereco = models.CharField(max_length=150, blank=True)
+    rodada = models.ForeignKey(Rodada, on_delete=models.PROTECT, related_name="jogos", blank=True)
     time_mandante = models.ForeignKey(Time, on_delete=models.PROTECT, related_name="jogos_mandante")
     time_visitante = models.ForeignKey(Time, on_delete=models.PROTECT, related_name="jogos_visitante")
     gols = models.JSONField(null=True, blank=True)
@@ -41,62 +41,67 @@ def vitoria_derrota(sender, instance, **kwargs):
 
     # print(list(jogos_mandante + jogos_visitante))
 
-    for jogo in jogos_mandante:
-        for gol in jogo.gols:
-                if gol is None:
-                    continue
-                if gol["time"] is not None:
-                    if gol["time"] == time_mandante.id:
-                        timeM_gols += 1
-                    elif gol["time"] is not time_mandante.id:
-                        timeV_gols += 1
-                        
-        if timeM_gols > timeV_gols:
-                    time_mandante.vitoria += 1
-                    time_mandante.pontos += 3
-                    timeM_gols = 0
-                    timeV_gols = 0
-                    time_mandante.save()
-        elif timeV_gols > timeM_gols:
-                    time_mandante.derrota += 1
-                    timeM_gols = 0
-                    timeV_gols = 0
-                    time_mandante.save()
-        else:
-                    time_mandante.empate += 1
-                    time_mandante.pontos += 1
-                    timeM_gols = 0
-                    timeV_gols = 0
-                    time_mandante.save()
+    if Campeonato.mata_mata is False:
+        for jogo in jogos_mandante:
+            for gol in jogo.gols:
+                    if gol is None:
+                        continue
+                    if gol["time"] is not None:
+                        if gol["time"] == time_mandante.id:
+                            timeM_gols += 1
+                        elif gol["time"] is not time_mandante.id:
+                            timeV_gols += 1
+                            
+            if timeM_gols > timeV_gols:
+                        time_mandante.vitoria += 1
+                        time_mandante.pontos += 3
+                        timeM_gols = 0
+                        timeV_gols = 0
+                        time_mandante.save()
+            elif timeV_gols > timeM_gols:
+                        time_mandante.derrota += 1
+                        timeM_gols = 0
+                        timeV_gols = 0
+                        time_mandante.save()
+            else:
+                        time_mandante.empate += 1
+                        time_mandante.pontos += 1
+                        timeM_gols = 0
+                        timeV_gols = 0
+                        time_mandante.save()
+    else:
+         None
 
-    for jogo in jogos_visitante:
-        for gol in jogo.gols:
-                if gol is None:
-                    continue
-                if gol["time"] is not None:
-                    if gol["time"] == time_visitante.id:
-                        timeV_gols += 1
-                    elif gol["time"] is not time_visitante.id:
-                        timeM_gols += 1
-                        
-        if timeV_gols > timeM_gols:
-                    time_visitante.vitoria += 1
-                    time_visitante.pontos += 3
-                    timeM_gols = 0
-                    timeV_gols = 0
-                    time_visitante.save()
-        elif timeM_gols > timeV_gols:
-                    time_visitante.derrota += 1
-                    timeM_gols = 0
-                    timeV_gols = 0
-                    time_visitante.save()
-        else:
-                    time_visitante.empate += 1
-                    time_visitante.pontos += 1
-                    timeM_gols = 0
-                    timeV_gols = 0
-                    time_visitante.save()            
-                
+    if Campeonato.mata_mata is False:
+        for jogo in jogos_visitante:
+            for gol in jogo.gols:
+                    if gol is None:
+                        continue
+                    if gol["time"] is not None:
+                        if gol["time"] == time_visitante.id:
+                            timeV_gols += 1
+                        elif gol["time"] is not time_visitante.id:
+                            timeM_gols += 1
+                            
+            if timeV_gols > timeM_gols:
+                        time_visitante.vitoria += 1
+                        time_visitante.pontos += 3
+                        timeM_gols = 0
+                        timeV_gols = 0
+                        time_visitante.save()
+            elif timeM_gols > timeV_gols:
+                        time_visitante.derrota += 1
+                        timeM_gols = 0
+                        timeV_gols = 0
+                        time_visitante.save()
+            else:
+                        time_visitante.empate += 1
+                        time_visitante.pontos += 1
+                        timeM_gols = 0
+                        timeV_gols = 0
+                        time_visitante.save()   
+    else:
+         None         
 
 
 @receiver(post_save, sender=Jogo)
@@ -115,34 +120,37 @@ def update_gols(sender, instance, **kwargs):
     jogos_mandante = list(time_mandante.jogos_mandante.all()) + list(time_mandante.jogos_visitante.all())
     jogos_visitante = list(time_visitante.jogos_mandante.all()) + list(time_visitante.jogos_visitante.all())
 
-    for jogo in jogos_mandante:
-        if jogo.gols is None:
-            continue
-        for gol in jogo.gols:
-            if gol is None:
+    if Campeonato.mata_mata is False:
+        for jogo in jogos_mandante:
+            if jogo.gols is None:
                 continue
-            if gol["time"] is not None:
-                if gol["time"] == time_mandante.id:
-                    time_mandante.gols_pro += 1
-                    time_mandante.save()
+            for gol in jogo.gols:
+                if gol is None:
+                    continue
+                if gol["time"] is not None:
+                    if gol["time"] == time_mandante.id:
+                        time_mandante.gols_pro += 1
+                        time_mandante.save()
+                    else:
+                        time_mandante.gols_contra += 1
+                        time_mandante.save()
                 else:
-                    time_mandante.gols_contra += 1
-                    time_mandante.save()
-            else:
-                continue
+                    continue
 
-    for jogo in jogos_visitante:
-        if jogo.gols is None:
-            continue
-        for gol in jogo.gols:
-            if gol is None:
+        for jogo in jogos_visitante:
+            if jogo.gols is None:
                 continue
-            if gol["time"] is not None:
-                if gol["time"] == time_visitante.id:
-                    time_visitante.gols_pro += 1
-                    time_visitante.save()
+            for gol in jogo.gols:
+                if gol is None:
+                    continue
+                if gol["time"] is not None:
+                    if gol["time"] == time_visitante.id:
+                        time_visitante.gols_pro += 1
+                        time_visitante.save()
+                    else:
+                        time_visitante.gols_contra += 1
+                        time_visitante.save()
                 else:
-                    time_visitante.gols_contra += 1
-                    time_visitante.save()
-            else:
-                continue
+                    continue
+    else:
+        None

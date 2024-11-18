@@ -8,6 +8,7 @@ class CampeonatoDetailSerializer(ModelSerializer):
             "id",
             "nome",
             "ano",
+            "mata_mata",
         ]
           
 
@@ -17,4 +18,5 @@ class CampeonatoWriteSerializer(ModelSerializer):
         fields: list[str] = [
             "nome",
             "ano",
+            "mata_mata",
         ]

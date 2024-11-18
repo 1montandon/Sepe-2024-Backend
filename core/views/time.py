@@ -1,6 +1,8 @@
 from core.models import Time
 from core.serializers import TimeDetailSerializer, TimeWriteSerializer
 
+
+from rest_framework.decorators import action
 from rest_framework.viewsets import ModelViewSet
 from drf_spectacular.utils import extend_schema
 from rest_framework.decorators import api_view
@@ -15,3 +17,4 @@ class TimeViewSet(ModelViewSet):
         if self.action in ["list", "retrieve"]:
             return TimeDetailSerializer
         return TimeWriteSerializer    
+    

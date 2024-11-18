@@ -1,5 +1,5 @@
 from rest_framework.serializers import ModelSerializer, CharField
-from core.models import Jogo
+from core.models import Jogo, Rodada
 from core.serializers.time import TimeListSerializer
 
 def update_create(instance):
@@ -34,11 +34,18 @@ def update_create(instance):
 
     instance.save()
     # return instance
+class RodadaSerializer(ModelSerializer):
+    class Meta:
+        model = Rodada
+        fields: list[str] = [
+            "id",
+            "numero_rodada",
+        ]
 
 class JogoDetailSerializer(ModelSerializer):
     time_visitante = TimeListSerializer()
     time_mandante = TimeListSerializer()
-
+    rodada = RodadaSerializer()
     class Meta:
         model = Jogo
         fields: list[str] = [
