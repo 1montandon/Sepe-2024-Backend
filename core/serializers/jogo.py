@@ -58,7 +58,8 @@ class JogoDetailSerializer(ModelSerializer):
             "time_visitante",
             "gols",
             "cartoes",
-            "vencedor"
+            "vencedor",
+            "tipo_jogo"
         ]
 
 class JogoWriteSerializer(ModelSerializer):
@@ -74,6 +75,8 @@ class JogoWriteSerializer(ModelSerializer):
             "time_visitante",
             "gols",
             "cartoes",
+            "tipo_jogo"
+
         ]
     def create(self, validated_data):
         # Create a new instance of Jogo with validated_data

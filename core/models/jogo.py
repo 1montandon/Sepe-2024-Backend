@@ -6,15 +6,21 @@ from django.dispatch import receiver
 
 
 class Jogo(models.Model):
-    data = models.DateField(blank=True)
-    horario = models.TimeField(blank=True)
-    endereco = models.CharField(max_length=150, blank=True)
-    rodada = models.ForeignKey(Rodada, on_delete=models.PROTECT, related_name="jogos", blank=True)
+    data = models.DateField(blank=True, null=True)
+    horario = models.TimeField(blank=True, null=True)
+    endereco = models.CharField(max_length=150, blank=True, null=True)
+    rodada = models.ForeignKey(Rodada, on_delete=models.PROTECT, related_name="jogos", blank=True, null=True)
     time_mandante = models.ForeignKey(Time, on_delete=models.PROTECT, related_name="jogos_mandante")
     time_visitante = models.ForeignKey(Time, on_delete=models.PROTECT, related_name="jogos_visitante")
     gols = models.JSONField(null=True, blank=True)
     vencedor = models.ForeignKey(Time, on_delete=models.PROTECT, related_name="+", blank=True, null=True)
     cartoes = models.JSONField(null=True, blank=True)
+    class opcoes_de_jogos(models.TextChoices):
+        GRUPOS = "GP",("Grupo")
+        SEMI = "SF", ("Semi")
+        FINAL = "FN",("Final")
+
+    tipo_jogo = models.CharField( max_length=3, choices=opcoes_de_jogos, default=opcoes_de_jogos.GRUPOS)
 
 
 @receiver(post_save, sender=Jogo)
