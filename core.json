@@ -1,5333 +1,444 @@
-
 [
 {
   "model": "admin.logentry",
-  "pk": 1,
-  "fields": {
-    "action_time": "2024-11-07T11:12:29.836Z",
-    "user": 1,
-    "content_type": 8,
-    "object_id": "1",
-    "object_repr": "Copão (1)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 2,
-  "fields": {
-    "action_time": "2024-11-07T11:12:45.339Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "1",
-    "object_repr": "Barcelona (1)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 3,
-  "fields": {
-    "action_time": "2024-11-07T11:12:48.947Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "1",
-    "object_repr": "Barcelona (1)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 4,
-  "fields": {
-    "action_time": "2024-11-07T11:13:00.795Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "2",
-    "object_repr": "Flamengo (2)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 5,
-  "fields": {
-    "action_time": "2024-11-07T11:13:08.116Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "3",
-    "object_repr": "Cruzeiro (3)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 6,
-  "fields": {
-    "action_time": "2024-11-07T11:13:25.797Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "4",
-    "object_repr": "Joinville (4)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 7,
-  "fields": {
-    "action_time": "2024-11-07T11:14:02.032Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "5",
-    "object_repr": "Athletico Paranaense (5)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 8,
-  "fields": {
-    "action_time": "2024-11-07T11:14:19.359Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "6",
-    "object_repr": "Palmeiras (6)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 9,
-  "fields": {
-    "action_time": "2024-11-07T11:14:49.234Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "7",
-    "object_repr": "Corinthias (7)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 10,
-  "fields": {
-    "action_time": "2024-11-07T11:15:05.748Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "8",
-    "object_repr": "Atletico Mineiro (8)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 11,
-  "fields": {
-    "action_time": "2024-11-07T11:15:25.561Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "8",
-    "object_repr": "São Paulo (8)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 12,
-  "fields": {
-    "action_time": "2024-11-07T11:16:04.011Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "1",
-    "object_repr": "Gabriel Barbosa (1)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 13,
-  "fields": {
-    "action_time": "2024-11-07T11:16:35.285Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "2",
-    "object_repr": "Rossi (2)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 14,
-  "fields": {
-    "action_time": "2024-11-07T11:16:58.407Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "3",
-    "object_repr": "Julio Cesar (3)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 15,
-  "fields": {
-    "action_time": "2024-11-07T11:17:34.640Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "4",
-    "object_repr": "Pedro Queixos (4)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 16,
-  "fields": {
-    "action_time": "2024-11-07T11:18:03.653Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "5",
-    "object_repr": "Wesley (5)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 17,
-  "fields": {
-    "action_time": "2024-11-07T11:18:43.230Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "6",
-    "object_repr": "Gerson (6)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 18,
-  "fields": {
-    "action_time": "2024-11-07T11:19:47.888Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "1",
-    "object_repr": "Botafogo (1)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 19,
-  "fields": {
-    "action_time": "2024-11-07T11:20:33.719Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "7",
-    "object_repr": "Igor Jesus (7)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 20,
-  "fields": {
-    "action_time": "2024-11-07T11:21:38.814Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "8",
-    "object_repr": "Tiquinho Soares (8)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 21,
-  "fields": {
-    "action_time": "2024-11-07T11:22:13.651Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "9",
-    "object_repr": "Marçal (9)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 22,
-  "fields": {
-    "action_time": "2024-11-07T11:22:45.075Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "10",
-    "object_repr": "Lucas Perri (10)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 23,
-  "fields": {
-    "action_time": "2024-11-07T11:23:02.221Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "5",
-    "object_repr": "Wesley (5)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 24,
-  "fields": {
-    "action_time": "2024-11-07T11:23:04.361Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "6",
-    "object_repr": "Gerson (6)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 25,
-  "fields": {
-    "action_time": "2024-11-07T11:23:55.751Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "11",
-    "object_repr": "Fabricio Bruno (11)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 26,
-  "fields": {
-    "action_time": "2024-11-07T11:24:24.703Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "12",
-    "object_repr": "Rodrigo Caio (12)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 27,
-  "fields": {
-    "action_time": "2024-11-07T11:25:01.580Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "13",
-    "object_repr": "Adryelson (13)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 28,
-  "fields": {
-    "action_time": "2024-11-07T11:26:25.906Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "9",
-    "object_repr": "Marçal (9)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 29,
-  "fields": {
-    "action_time": "2024-11-07T11:26:28.664Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "8",
-    "object_repr": "Tiquinho Soares (8)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 30,
-  "fields": {
-    "action_time": "2024-11-07T11:26:30.807Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "7",
-    "object_repr": "Igor Jesus (7)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 31,
-  "fields": {
-    "action_time": "2024-11-07T11:26:34.900Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "13",
-    "object_repr": "Adryelson (13)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 32,
-  "fields": {
-    "action_time": "2024-11-07T11:26:36.658Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "10",
-    "object_repr": "Lucas Perri (10)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 33,
-  "fields": {
-    "action_time": "2024-11-07T11:26:38.746Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "9",
-    "object_repr": "Marçal (9)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 34,
-  "fields": {
-    "action_time": "2024-11-07T11:26:40.814Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "13",
-    "object_repr": "Adryelson (13)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 35,
-  "fields": {
-    "action_time": "2024-11-07T11:26:44.257Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "10",
-    "object_repr": "Lucas Perri (10)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Posicao\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 36,
-  "fields": {
-    "action_time": "2024-11-07T11:27:08.158Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "14",
-    "object_repr": "Luis Henrique (14)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 37,
-  "fields": {
-    "action_time": "2024-11-07T11:27:37.874Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "14",
-    "object_repr": "Luis Henrique (14)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 38,
-  "fields": {
-    "action_time": "2024-11-07T11:27:42.098Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "10",
-    "object_repr": "Lucas Perri (10)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 39,
-  "fields": {
-    "action_time": "2024-11-07T11:28:22.818Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "15",
-    "object_repr": "Gatito Fernandes (15)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 40,
-  "fields": {
-    "action_time": "2024-11-07T11:28:47.737Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "16",
-    "object_repr": "Everson (16)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 41,
-  "fields": {
-    "action_time": "2024-11-07T11:29:33.862Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "17",
-    "object_repr": "Weverton (17)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 42,
-  "fields": {
-    "action_time": "2024-11-07T11:30:05.481Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "18",
-    "object_repr": "Marcelo Lomba (18)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 43,
-  "fields": {
-    "action_time": "2024-11-07T11:30:24.148Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "19",
-    "object_repr": "Gustavo Gomez (19)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 44,
-  "fields": {
-    "action_time": "2024-11-07T11:30:40.456Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "20",
-    "object_repr": "Murilo (20)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 45,
-  "fields": {
-    "action_time": "2024-11-07T11:31:49.632Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "21",
-    "object_repr": "Piquerez (21)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 46,
-  "fields": {
-    "action_time": "2024-11-07T11:32:11.729Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "22",
-    "object_repr": "Zé Rafael (22)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 47,
-  "fields": {
-    "action_time": "2024-11-07T11:33:20.060Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "23",
-    "object_repr": "Rony (23)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 48,
-  "fields": {
-    "action_time": "2024-11-07T11:33:41.839Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "24",
-    "object_repr": "Raphael Veiga (24)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 49,
-  "fields": {
-    "action_time": "2024-11-07T11:34:22.090Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "25",
-    "object_repr": "Rafael Cabral (25)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 50,
-  "fields": {
-    "action_time": "2024-11-07T11:34:50.703Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "26",
-    "object_repr": "Andersson (26)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 51,
-  "fields": {
-    "action_time": "2024-11-07T11:35:08.144Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "27",
-    "object_repr": "Lucas Oliveira (27)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 52,
-  "fields": {
-    "action_time": "2024-11-07T11:35:12.215Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "27",
-    "object_repr": "Lucas Oliveira (27)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Posicao\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 53,
-  "fields": {
-    "action_time": "2024-11-07T11:35:26.502Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "28",
-    "object_repr": "Marcos Neris (28)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 54,
-  "fields": {
-    "action_time": "2024-11-07T11:35:46.168Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "29",
-    "object_repr": "William (29)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 55,
-  "fields": {
-    "action_time": "2024-11-07T11:36:25.366Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "30",
-    "object_repr": "Ramiro (30)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 56,
-  "fields": {
-    "action_time": "2024-11-07T11:36:44.718Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "31",
-    "object_repr": "Mateus Vital (31)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 57,
-  "fields": {
-    "action_time": "2024-11-07T11:37:07.471Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "32",
-    "object_repr": "Gilberto (32)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 58,
-  "fields": {
-    "action_time": "2024-11-07T11:37:33.990Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "33",
-    "object_repr": "Matheus Pereira (33)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 59,
-  "fields": {
-    "action_time": "2024-11-07T11:37:54.649Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "25",
-    "object_repr": "Rafael Cabral (25)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 60,
-  "fields": {
-    "action_time": "2024-11-07T11:38:04.925Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "32",
-    "object_repr": "Gilberto (32)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 61,
-  "fields": {
-    "action_time": "2024-11-07T11:38:07.008Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "31",
-    "object_repr": "Mateus Vital (31)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 62,
-  "fields": {
-    "action_time": "2024-11-07T11:38:10.401Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "24",
-    "object_repr": "Raphael Veiga (24)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 63,
-  "fields": {
-    "action_time": "2024-11-07T11:38:20.338Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "25",
-    "object_repr": "Rafael Cabral (25)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 64,
-  "fields": {
-    "action_time": "2024-11-07T11:38:21.751Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "26",
-    "object_repr": "Andersson (26)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 65,
-  "fields": {
-    "action_time": "2024-11-07T11:38:24.901Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "27",
-    "object_repr": "Lucas Oliveira (27)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 66,
-  "fields": {
-    "action_time": "2024-11-07T11:38:29.382Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "28",
-    "object_repr": "Marcos Neris (28)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 67,
-  "fields": {
-    "action_time": "2024-11-07T11:38:48.024Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "33",
-    "object_repr": "Matheus Pereira (33)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 68,
-  "fields": {
-    "action_time": "2024-11-07T11:38:50.104Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "32",
-    "object_repr": "Gilberto (32)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 69,
-  "fields": {
-    "action_time": "2024-11-07T11:38:51.751Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "31",
-    "object_repr": "Mateus Vital (31)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 70,
-  "fields": {
-    "action_time": "2024-11-07T11:38:53.817Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "30",
-    "object_repr": "Ramiro (30)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 71,
-  "fields": {
-    "action_time": "2024-11-07T11:38:55.632Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "29",
-    "object_repr": "William (29)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 72,
-  "fields": {
-    "action_time": "2024-11-07T11:38:57.823Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "31",
-    "object_repr": "Mateus Vital (31)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 73,
-  "fields": {
-    "action_time": "2024-11-07T11:38:59.402Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "30",
-    "object_repr": "Ramiro (30)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 74,
-  "fields": {
-    "action_time": "2024-11-07T11:39:01.705Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "30",
-    "object_repr": "Ramiro (30)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 75,
-  "fields": {
-    "action_time": "2024-11-07T11:39:03.087Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "29",
-    "object_repr": "William (29)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 76,
-  "fields": {
-    "action_time": "2024-11-07T11:39:04.200Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "28",
-    "object_repr": "Marcos Neris (28)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 77,
-  "fields": {
-    "action_time": "2024-11-07T11:39:05.471Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "27",
-    "object_repr": "Lucas Oliveira (27)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 78,
-  "fields": {
-    "action_time": "2024-11-07T11:39:09.573Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "31",
-    "object_repr": "Mateus Vital (31)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 79,
-  "fields": {
-    "action_time": "2024-11-07T11:39:13.648Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "28",
-    "object_repr": "Marcos Neris (28)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 80,
-  "fields": {
-    "action_time": "2024-11-07T11:39:17.444Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "30",
-    "object_repr": "Ramiro (30)",
+  "pk": 411,
+  "fields": {
+    "action_time": "2024-11-13T18:36:45.099Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "34",
+    "object_repr": "Jogo object (34)",
     "action_flag": 3,
     "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 81,
+  "pk": 412,
   "fields": {
-    "action_time": "2024-11-07T11:39:23.920Z",
-    "user": 1,
-    "content_type": 10,
+    "action_time": "2024-11-13T18:36:45.099Z",
+    "user": 2,
+    "content_type": 13,
     "object_id": "33",
-    "object_repr": "Matheus Pereira (33)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 82,
-  "fields": {
-    "action_time": "2024-11-07T11:39:25.639Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "32",
-    "object_repr": "Gilberto (32)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 83,
-  "fields": {
-    "action_time": "2024-11-07T11:39:27.240Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "31",
-    "object_repr": "Mateus Vital (31)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 84,
-  "fields": {
-    "action_time": "2024-11-07T11:39:28.522Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "29",
-    "object_repr": "William (29)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 85,
-  "fields": {
-    "action_time": "2024-11-07T11:39:30.415Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "28",
-    "object_repr": "Marcos Neris (28)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 86,
-  "fields": {
-    "action_time": "2024-11-07T11:39:31.943Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "27",
-    "object_repr": "Lucas Oliveira (27)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 87,
-  "fields": {
-    "action_time": "2024-11-07T11:39:33.704Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "26",
-    "object_repr": "Andersson (26)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 88,
-  "fields": {
-    "action_time": "2024-11-07T11:39:35.144Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "25",
-    "object_repr": "Rafael Cabral (25)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 89,
-  "fields": {
-    "action_time": "2024-11-07T11:39:55.686Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "31",
-    "object_repr": "Mateus Vital (31)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 90,
-  "fields": {
-    "action_time": "2024-11-07T11:41:14.318Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "34",
-    "object_repr": "Matheus (34)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 91,
-  "fields": {
-    "action_time": "2024-11-07T11:41:32.973Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "35",
-    "object_repr": "Pato (35)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 92,
-  "fields": {
-    "action_time": "2024-11-07T11:41:56.943Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "36",
-    "object_repr": "Anjinho (36)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 93,
-  "fields": {
-    "action_time": "2024-11-07T11:42:12.166Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "37",
-    "object_repr": "Ernani (37)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 94,
-  "fields": {
-    "action_time": "2024-11-07T11:42:31.373Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "38",
-    "object_repr": "Xuxa (38)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 95,
-  "fields": {
-    "action_time": "2024-11-07T11:42:49.492Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "39",
-    "object_repr": "Pedro Rei (39)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 96,
-  "fields": {
-    "action_time": "2024-11-07T11:43:31.492Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "40",
-    "object_repr": "Roni (40)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 97,
-  "fields": {
-    "action_time": "2024-11-07T11:44:06.066Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "41",
-    "object_repr": "Igor Costa (41)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 98,
-  "fields": {
-    "action_time": "2024-11-07T11:47:10.411Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "35",
-    "object_repr": "Pato (35)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 99,
-  "fields": {
-    "action_time": "2024-11-07T11:47:15.893Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "36",
-    "object_repr": "Anjinho (36)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 100,
-  "fields": {
-    "action_time": "2024-11-07T11:47:17.990Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "34",
-    "object_repr": "Matheus (34)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 101,
-  "fields": {
-    "action_time": "2024-11-07T11:47:19.782Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "35",
-    "object_repr": "Pato (35)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 102,
-  "fields": {
-    "action_time": "2024-11-07T11:47:21.460Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "36",
-    "object_repr": "Anjinho (36)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 103,
-  "fields": {
-    "action_time": "2024-11-07T11:47:23.276Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "37",
-    "object_repr": "Ernani (37)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 104,
-  "fields": {
-    "action_time": "2024-11-07T11:47:24.780Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "38",
-    "object_repr": "Xuxa (38)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 105,
-  "fields": {
-    "action_time": "2024-11-07T11:47:26.781Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "39",
-    "object_repr": "Pedro Rei (39)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 106,
-  "fields": {
-    "action_time": "2024-11-07T11:47:28.802Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "40",
-    "object_repr": "Roni (40)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 107,
-  "fields": {
-    "action_time": "2024-11-07T11:47:31.308Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "41",
-    "object_repr": "Igor Costa (41)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 108,
-  "fields": {
-    "action_time": "2024-11-07T11:48:47.687Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "42",
-    "object_repr": "Bento (42)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 109,
-  "fields": {
-    "action_time": "2024-11-07T11:50:11.573Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "43",
-    "object_repr": "Leo Linck (43)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 110,
-  "fields": {
-    "action_time": "2024-11-07T11:51:37.979Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "44",
-    "object_repr": "Thiago Heleno (44)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 111,
-  "fields": {
-    "action_time": "2024-11-07T11:52:05.338Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "45",
-    "object_repr": "Pedro Henrique (45)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 112,
-  "fields": {
-    "action_time": "2024-11-07T11:52:22.147Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "46",
-    "object_repr": "Khellven (46)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 113,
-  "fields": {
-    "action_time": "2024-11-07T11:52:47.713Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "47",
-    "object_repr": "Cristhian (47)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 114,
-  "fields": {
-    "action_time": "2024-11-07T11:53:05.307Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "48",
-    "object_repr": "Cannobio (48)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 115,
-  "fields": {
-    "action_time": "2024-11-07T11:53:23.362Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "49",
-    "object_repr": "Vitor Roque (49)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 116,
-  "fields": {
-    "action_time": "2024-11-07T11:53:38.640Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "50",
-    "object_repr": "Pablo (50)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 117,
-  "fields": {
-    "action_time": "2024-11-07T11:53:55.372Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "48",
-    "object_repr": "Cannobio (48)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 118,
-  "fields": {
-    "action_time": "2024-11-07T11:53:57.106Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "47",
-    "object_repr": "Cristhian (47)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 119,
-  "fields": {
-    "action_time": "2024-11-07T11:53:58.730Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "46",
-    "object_repr": "Khellven (46)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 120,
-  "fields": {
-    "action_time": "2024-11-07T11:54:01.592Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "47",
-    "object_repr": "Cristhian (47)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 121,
-  "fields": {
-    "action_time": "2024-11-07T11:54:04.714Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "47",
-    "object_repr": "Cristhian (47)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 122,
-  "fields": {
-    "action_time": "2024-11-07T11:54:07.434Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "46",
-    "object_repr": "Khellven (46)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 123,
-  "fields": {
-    "action_time": "2024-11-07T11:54:08.946Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "48",
-    "object_repr": "Cannobio (48)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 124,
-  "fields": {
-    "action_time": "2024-11-07T11:54:10.970Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "46",
-    "object_repr": "Khellven (46)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 125,
-  "fields": {
-    "action_time": "2024-11-07T11:54:13.022Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "47",
-    "object_repr": "Cristhian (47)",
+    "object_repr": "Jogo object (33)",
     "action_flag": 3,
     "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 126,
+  "pk": 413,
   "fields": {
-    "action_time": "2024-11-07T11:54:59.171Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "51",
-    "object_repr": "Cassio (51)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.099Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "32",
+    "object_repr": "Jogo object (32)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 127,
+  "pk": 414,
   "fields": {
-    "action_time": "2024-11-07T11:55:13.296Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "52",
-    "object_repr": "Miguel (52)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.099Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "31",
+    "object_repr": "Jogo object (31)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 128,
+  "pk": 415,
   "fields": {
-    "action_time": "2024-11-07T11:55:38.506Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "53",
-    "object_repr": "Fagner (53)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.099Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "30",
+    "object_repr": "Jogo object (30)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 129,
+  "pk": 416,
   "fields": {
-    "action_time": "2024-11-07T11:55:58.081Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "54",
-    "object_repr": "Gil (54)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.099Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "29",
+    "object_repr": "Jogo object (29)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 130,
+  "pk": 417,
   "fields": {
-    "action_time": "2024-11-07T11:56:17.503Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "55",
-    "object_repr": "Renato Augusto (55)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.099Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "28",
+    "object_repr": "Jogo object (28)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 131,
+  "pk": 418,
   "fields": {
-    "action_time": "2024-11-07T11:56:33.911Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "56",
-    "object_repr": "Roger Guedes (56)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 132,
-  "fields": {
-    "action_time": "2024-11-07T11:56:51.224Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "57",
-    "object_repr": "Yuri Alberto (57)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 133,
-  "fields": {
-    "action_time": "2024-11-07T11:57:14.260Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "58",
-    "object_repr": "Memphis Depay (58)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 134,
-  "fields": {
-    "action_time": "2024-11-07T11:58:46.505Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "59",
-    "object_repr": "Rafael (59)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 135,
-  "fields": {
-    "action_time": "2024-11-07T11:59:00.615Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "60",
-    "object_repr": "Rogerio Ceni (60)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 136,
-  "fields": {
-    "action_time": "2024-11-07T11:59:51.007Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "61",
-    "object_repr": "Diego Costa (61)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 137,
-  "fields": {
-    "action_time": "2024-11-07T12:00:04.535Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "62",
-    "object_repr": "Arboleda (62)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 138,
-  "fields": {
-    "action_time": "2024-11-07T12:01:05.738Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "63",
-    "object_repr": "Alisson (63)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 139,
-  "fields": {
-    "action_time": "2024-11-07T12:01:23.208Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "64",
-    "object_repr": "Lucas Peralta (64)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 140,
-  "fields": {
-    "action_time": "2024-11-07T12:01:36.907Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "65",
-    "object_repr": "Calleri (65)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 141,
-  "fields": {
-    "action_time": "2024-11-07T12:01:40.297Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "64",
-    "object_repr": "Lucas Peralta (64)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 142,
-  "fields": {
-    "action_time": "2024-11-07T12:01:54.809Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "66",
-    "object_repr": "Patrick (66)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 143,
-  "fields": {
-    "action_time": "2024-11-07T12:02:35.848Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "1",
-    "object_repr": "TimeJogador object (1)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 144,
-  "fields": {
-    "action_time": "2024-11-07T12:02:40.468Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "1",
-    "object_repr": "TimeJogador object (1)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 145,
-  "fields": {
-    "action_time": "2024-11-07T12:02:47.667Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "2",
-    "object_repr": "TimeJogador object (2)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 146,
-  "fields": {
-    "action_time": "2024-11-07T12:02:56.935Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "3",
-    "object_repr": "TimeJogador object (3)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 147,
-  "fields": {
-    "action_time": "2024-11-07T12:03:06.019Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "3",
-    "object_repr": "TimeJogador object (3)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 148,
-  "fields": {
-    "action_time": "2024-11-07T12:03:13.729Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "4",
-    "object_repr": "TimeJogador object (4)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 149,
-  "fields": {
-    "action_time": "2024-11-07T12:03:24.267Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "5",
-    "object_repr": "TimeJogador object (5)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 150,
-  "fields": {
-    "action_time": "2024-11-07T12:03:32.269Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "6",
-    "object_repr": "TimeJogador object (6)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 151,
-  "fields": {
-    "action_time": "2024-11-07T12:03:42.003Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "7",
-    "object_repr": "TimeJogador object (7)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 152,
-  "fields": {
-    "action_time": "2024-11-07T12:03:49.628Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "8",
-    "object_repr": "TimeJogador object (8)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 153,
-  "fields": {
-    "action_time": "2024-11-07T12:03:51.899Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "7",
-    "object_repr": "TimeJogador object (7)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 154,
-  "fields": {
-    "action_time": "2024-11-07T12:03:53.061Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "8",
-    "object_repr": "TimeJogador object (8)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 155,
-  "fields": {
-    "action_time": "2024-11-07T12:04:47.632Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "9",
-    "object_repr": "TimeJogador object (9)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 156,
-  "fields": {
-    "action_time": "2024-11-07T12:04:57.451Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "10",
-    "object_repr": "TimeJogador object (10)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 157,
-  "fields": {
-    "action_time": "2024-11-07T12:05:05.694Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "11",
-    "object_repr": "TimeJogador object (11)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 158,
-  "fields": {
-    "action_time": "2024-11-07T12:05:14.330Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "12",
-    "object_repr": "TimeJogador object (12)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 159,
-  "fields": {
-    "action_time": "2024-11-07T12:05:18.234Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "11",
-    "object_repr": "TimeJogador object (11)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 160,
-  "fields": {
-    "action_time": "2024-11-07T12:05:20.366Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "12",
-    "object_repr": "TimeJogador object (12)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 161,
-  "fields": {
-    "action_time": "2024-11-07T12:05:31.537Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "13",
-    "object_repr": "TimeJogador object (13)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 162,
-  "fields": {
-    "action_time": "2024-11-07T12:05:51.928Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "14",
-    "object_repr": "TimeJogador object (14)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 163,
-  "fields": {
-    "action_time": "2024-11-07T12:06:14.485Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "15",
-    "object_repr": "TimeJogador object (15)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 164,
-  "fields": {
-    "action_time": "2024-11-07T12:06:16.913Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "14",
-    "object_repr": "TimeJogador object (14)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 165,
-  "fields": {
-    "action_time": "2024-11-07T12:06:18.176Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "15",
-    "object_repr": "TimeJogador object (15)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 166,
-  "fields": {
-    "action_time": "2024-11-07T12:06:30.227Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "16",
-    "object_repr": "TimeJogador object (16)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 167,
-  "fields": {
-    "action_time": "2024-11-07T12:06:53.817Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "17",
-    "object_repr": "TimeJogador object (17)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 168,
-  "fields": {
-    "action_time": "2024-11-07T12:07:06.506Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "18",
-    "object_repr": "TimeJogador object (18)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 169,
-  "fields": {
-    "action_time": "2024-11-07T12:07:17.144Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "18",
-    "object_repr": "TimeJogador object (18)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 170,
-  "fields": {
-    "action_time": "2024-11-07T12:07:25.811Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "19",
-    "object_repr": "TimeJogador object (19)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 171,
-  "fields": {
-    "action_time": "2024-11-07T12:07:34.065Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "20",
-    "object_repr": "TimeJogador object (20)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 172,
-  "fields": {
-    "action_time": "2024-11-07T12:07:50.457Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "21",
-    "object_repr": "TimeJogador object (21)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 173,
-  "fields": {
-    "action_time": "2024-11-07T12:07:53.121Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "20",
-    "object_repr": "TimeJogador object (20)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 174,
-  "fields": {
-    "action_time": "2024-11-07T12:07:56.865Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "21",
-    "object_repr": "TimeJogador object (21)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 175,
-  "fields": {
-    "action_time": "2024-11-07T12:08:08.205Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "22",
-    "object_repr": "TimeJogador object (22)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 176,
-  "fields": {
-    "action_time": "2024-11-07T12:08:19.135Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "23",
-    "object_repr": "TimeJogador object (23)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 177,
-  "fields": {
-    "action_time": "2024-11-07T12:08:22.303Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "22",
-    "object_repr": "TimeJogador object (22)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 178,
-  "fields": {
-    "action_time": "2024-11-07T12:08:36.923Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "24",
-    "object_repr": "TimeJogador object (24)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 179,
-  "fields": {
-    "action_time": "2024-11-07T12:08:58.115Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "25",
-    "object_repr": "TimeJogador object (25)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 180,
-  "fields": {
-    "action_time": "2024-11-07T12:09:17.191Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "26",
-    "object_repr": "TimeJogador object (26)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 181,
-  "fields": {
-    "action_time": "2024-11-07T12:09:22.841Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "25",
-    "object_repr": "TimeJogador object (25)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 182,
-  "fields": {
-    "action_time": "2024-11-07T12:09:31.117Z",
-    "user": 1,
-    "content_type": 14,
+    "action_time": "2024-11-13T18:36:45.099Z",
+    "user": 2,
+    "content_type": 13,
     "object_id": "27",
-    "object_repr": "TimeJogador object (27)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "object_repr": "Jogo object (27)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 183,
+  "pk": 419,
   "fields": {
-    "action_time": "2024-11-07T12:09:53.419Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "28",
-    "object_repr": "TimeJogador object (28)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 184,
-  "fields": {
-    "action_time": "2024-11-07T12:10:07.695Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "29",
-    "object_repr": "TimeJogador object (29)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 185,
-  "fields": {
-    "action_time": "2024-11-07T12:10:26.251Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "30",
-    "object_repr": "TimeJogador object (30)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 186,
-  "fields": {
-    "action_time": "2024-11-07T12:10:28.408Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "29",
-    "object_repr": "TimeJogador object (29)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 187,
-  "fields": {
-    "action_time": "2024-11-07T12:10:40.009Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "30",
-    "object_repr": "TimeJogador object (30)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Jogador\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 188,
-  "fields": {
-    "action_time": "2024-11-07T12:11:07.832Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "30",
-    "object_repr": "TimeJogador object (30)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 189,
-  "fields": {
-    "action_time": "2024-11-07T12:11:16.024Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "31",
-    "object_repr": "TimeJogador object (31)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 190,
-  "fields": {
-    "action_time": "2024-11-07T12:11:32.224Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "32",
-    "object_repr": "TimeJogador object (32)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 191,
-  "fields": {
-    "action_time": "2024-11-07T12:11:35.758Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "33",
-    "object_repr": "TimeJogador object (33)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 192,
-  "fields": {
-    "action_time": "2024-11-07T12:11:37.919Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "33",
-    "object_repr": "TimeJogador object (33)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 193,
-  "fields": {
-    "action_time": "2024-11-07T12:11:40Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "32",
-    "object_repr": "TimeJogador object (32)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 194,
-  "fields": {
-    "action_time": "2024-11-07T12:11:48.871Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "33",
-    "object_repr": "TimeJogador object (33)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Jogador\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 195,
-  "fields": {
-    "action_time": "2024-11-07T12:11:50.910Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "31",
-    "object_repr": "TimeJogador object (31)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 196,
-  "fields": {
-    "action_time": "2024-11-07T12:11:53.079Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "30",
-    "object_repr": "TimeJogador object (30)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 197,
-  "fields": {
-    "action_time": "2024-11-07T12:11:54.896Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "29",
-    "object_repr": "TimeJogador object (29)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 198,
-  "fields": {
-    "action_time": "2024-11-07T12:11:56.615Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "28",
-    "object_repr": "TimeJogador object (28)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 199,
-  "fields": {
-    "action_time": "2024-11-07T12:11:58.033Z",
-    "user": 1,
-    "content_type": 14,
+    "action_time": "2024-11-13T18:36:45.099Z",
+    "user": 2,
+    "content_type": 13,
     "object_id": "26",
-    "object_repr": "TimeJogador object (26)",
-    "action_flag": 2,
-    "change_message": "[]"
+    "object_repr": "Jogo object (26)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 200,
+  "pk": 420,
   "fields": {
-    "action_time": "2024-11-07T12:12:11.253Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "34",
-    "object_repr": "TimeJogador object (34)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.100Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "25",
+    "object_repr": "Jogo object (25)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 201,
+  "pk": 421,
   "fields": {
-    "action_time": "2024-11-07T12:12:20.824Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "35",
-    "object_repr": "TimeJogador object (35)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.100Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "24",
+    "object_repr": "Jogo object (24)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 202,
+  "pk": 422,
   "fields": {
-    "action_time": "2024-11-07T12:12:34.769Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "36",
-    "object_repr": "TimeJogador object (36)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.100Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "23",
+    "object_repr": "Jogo object (23)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 203,
+  "pk": 423,
   "fields": {
-    "action_time": "2024-11-07T12:12:44.555Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "37",
-    "object_repr": "TimeJogador object (37)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.100Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "22",
+    "object_repr": "Jogo object (22)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 204,
+  "pk": 424,
   "fields": {
-    "action_time": "2024-11-07T12:12:55.669Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "38",
-    "object_repr": "TimeJogador object (38)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.100Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "21",
+    "object_repr": "Jogo object (21)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 205,
+  "pk": 425,
   "fields": {
-    "action_time": "2024-11-07T12:12:58.031Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "37",
-    "object_repr": "TimeJogador object (37)",
-    "action_flag": 2,
-    "change_message": "[]"
+    "action_time": "2024-11-13T18:36:45.100Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "20",
+    "object_repr": "Jogo object (20)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 206,
+  "pk": 426,
   "fields": {
-    "action_time": "2024-11-07T12:12:59.952Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "38",
-    "object_repr": "TimeJogador object (38)",
-    "action_flag": 2,
-    "change_message": "[]"
+    "action_time": "2024-11-13T18:36:45.100Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "19",
+    "object_repr": "Jogo object (19)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 207,
+  "pk": 427,
   "fields": {
-    "action_time": "2024-11-07T12:13:20.922Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "39",
-    "object_repr": "TimeJogador object (39)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.100Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "18",
+    "object_repr": "Jogo object (18)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 208,
+  "pk": 428,
   "fields": {
-    "action_time": "2024-11-07T12:13:50.831Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "40",
-    "object_repr": "TimeJogador object (40)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.100Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "17",
+    "object_repr": "Jogo object (17)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 209,
+  "pk": 429,
   "fields": {
-    "action_time": "2024-11-07T12:13:58.867Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "41",
-    "object_repr": "TimeJogador object (41)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.100Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "16",
+    "object_repr": "Jogo object (16)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 210,
+  "pk": 430,
   "fields": {
-    "action_time": "2024-11-07T12:14:09.602Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "42",
-    "object_repr": "TimeJogador object (42)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.100Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "15",
+    "object_repr": "Jogo object (15)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 211,
+  "pk": 431,
   "fields": {
-    "action_time": "2024-11-07T12:14:19.342Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "43",
-    "object_repr": "TimeJogador object (43)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.100Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "14",
+    "object_repr": "Jogo object (14)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 212,
+  "pk": 432,
   "fields": {
-    "action_time": "2024-11-07T12:14:36.296Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "44",
-    "object_repr": "TimeJogador object (44)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-13T18:36:45.100Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "13",
+    "object_repr": "Jogo object (13)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 213,
+  "pk": 433,
   "fields": {
-    "action_time": "2024-11-07T12:14:38.502Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "43",
-    "object_repr": "TimeJogador object (43)",
-    "action_flag": 2,
-    "change_message": "[]"
+    "action_time": "2024-11-13T18:36:45.100Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "12",
+    "object_repr": "Jogo object (12)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 214,
+  "pk": 434,
   "fields": {
-    "action_time": "2024-11-07T12:14:40.230Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "42",
-    "object_repr": "TimeJogador object (42)",
-    "action_flag": 2,
-    "change_message": "[]"
+    "action_time": "2024-11-13T18:36:45.100Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "11",
+    "object_repr": "Jogo object (11)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 215,
+  "pk": 435,
   "fields": {
-    "action_time": "2024-11-07T12:14:42.535Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "44",
-    "object_repr": "TimeJogador object (44)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 216,
-  "fields": {
-    "action_time": "2024-11-07T12:14:48.519Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "43",
-    "object_repr": "TimeJogador object (43)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Jogador\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 217,
-  "fields": {
-    "action_time": "2024-11-07T12:14:50.479Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "42",
-    "object_repr": "TimeJogador object (42)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 218,
-  "fields": {
-    "action_time": "2024-11-07T12:14:51.795Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "43",
-    "object_repr": "TimeJogador object (43)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 219,
-  "fields": {
-    "action_time": "2024-11-07T12:14:58.702Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "44",
-    "object_repr": "TimeJogador object (44)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Jogador\", \"Time\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 220,
-  "fields": {
-    "action_time": "2024-11-07T12:17:35.167Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "44",
-    "object_repr": "TimeJogador object (44)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 221,
-  "fields": {
-    "action_time": "2024-11-07T12:18:02.181Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "45",
-    "object_repr": "TimeJogador object (45)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 222,
-  "fields": {
-    "action_time": "2024-11-07T12:18:20.382Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "46",
-    "object_repr": "TimeJogador object (46)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 223,
-  "fields": {
-    "action_time": "2024-11-07T12:19:03.404Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "47",
-    "object_repr": "TimeJogador object (47)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 224,
-  "fields": {
-    "action_time": "2024-11-07T12:19:33.996Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "48",
-    "object_repr": "TimeJogador object (48)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 225,
-  "fields": {
-    "action_time": "2024-11-07T12:19:47.721Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "49",
-    "object_repr": "TimeJogador object (49)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 226,
-  "fields": {
-    "action_time": "2024-11-07T12:20:10.007Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "50",
-    "object_repr": "TimeJogador object (50)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 227,
-  "fields": {
-    "action_time": "2024-11-07T12:20:23.691Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "51",
-    "object_repr": "TimeJogador object (51)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 228,
-  "fields": {
-    "action_time": "2024-11-07T12:20:47.036Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "52",
-    "object_repr": "TimeJogador object (52)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 229,
-  "fields": {
-    "action_time": "2024-11-07T12:20:55.884Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "53",
-    "object_repr": "TimeJogador object (53)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 230,
-  "fields": {
-    "action_time": "2024-11-07T12:21:03.692Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "54",
-    "object_repr": "TimeJogador object (54)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 231,
-  "fields": {
-    "action_time": "2024-11-07T12:21:13.911Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "55",
-    "object_repr": "TimeJogador object (55)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 232,
-  "fields": {
-    "action_time": "2024-11-07T12:21:26.255Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "56",
-    "object_repr": "TimeJogador object (56)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 233,
-  "fields": {
-    "action_time": "2024-11-07T12:21:35.260Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "57",
-    "object_repr": "TimeJogador object (57)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 234,
-  "fields": {
-    "action_time": "2024-11-07T12:21:37.076Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "56",
-    "object_repr": "TimeJogador object (56)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 235,
-  "fields": {
-    "action_time": "2024-11-07T12:21:39.018Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "55",
-    "object_repr": "TimeJogador object (55)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 236,
-  "fields": {
-    "action_time": "2024-11-07T12:21:40.661Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "54",
-    "object_repr": "TimeJogador object (54)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 237,
-  "fields": {
-    "action_time": "2024-11-07T12:21:42.379Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "57",
-    "object_repr": "TimeJogador object (57)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 238,
-  "fields": {
-    "action_time": "2024-11-07T12:21:44.573Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "56",
-    "object_repr": "TimeJogador object (56)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 239,
-  "fields": {
-    "action_time": "2024-11-07T12:21:46.884Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "55",
-    "object_repr": "TimeJogador object (55)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 240,
-  "fields": {
-    "action_time": "2024-11-07T12:21:48.201Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "54",
-    "object_repr": "TimeJogador object (54)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 241,
-  "fields": {
-    "action_time": "2024-11-07T12:22:03.101Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "58",
-    "object_repr": "TimeJogador object (58)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 242,
-  "fields": {
-    "action_time": "2024-11-07T12:22:11.048Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "59",
-    "object_repr": "TimeJogador object (59)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 243,
-  "fields": {
-    "action_time": "2024-11-07T12:22:20.494Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "60",
-    "object_repr": "TimeJogador object (60)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 244,
-  "fields": {
-    "action_time": "2024-11-07T12:22:22.452Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "59",
-    "object_repr": "TimeJogador object (59)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 245,
-  "fields": {
-    "action_time": "2024-11-07T12:22:24.011Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "60",
-    "object_repr": "TimeJogador object (60)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 246,
-  "fields": {
-    "action_time": "2024-11-07T12:22:31.684Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "61",
-    "object_repr": "TimeJogador object (61)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 247,
-  "fields": {
-    "action_time": "2024-11-07T12:22:47.383Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "62",
-    "object_repr": "TimeJogador object (62)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 248,
-  "fields": {
-    "action_time": "2024-11-07T12:22:49.067Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "61",
-    "object_repr": "TimeJogador object (61)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 249,
-  "fields": {
-    "action_time": "2024-11-07T12:22:50.582Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "62",
-    "object_repr": "TimeJogador object (62)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 250,
-  "fields": {
-    "action_time": "2024-11-07T12:22:56.814Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "62",
-    "object_repr": "TimeJogador object (62)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Jogador\", \"Time\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 251,
-  "fields": {
-    "action_time": "2024-11-07T12:23:04.709Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "63",
-    "object_repr": "TimeJogador object (63)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 252,
-  "fields": {
-    "action_time": "2024-11-07T12:23:17.048Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "64",
-    "object_repr": "TimeJogador object (64)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 253,
-  "fields": {
-    "action_time": "2024-11-07T12:23:23.783Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "65",
-    "object_repr": "TimeJogador object (65)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 254,
-  "fields": {
-    "action_time": "2024-11-07T12:23:25.547Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "64",
-    "object_repr": "TimeJogador object (64)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 255,
-  "fields": {
-    "action_time": "2024-11-07T12:23:27.404Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "65",
-    "object_repr": "TimeJogador object (65)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 256,
-  "fields": {
-    "action_time": "2024-11-07T12:23:39.358Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "66",
-    "object_repr": "TimeJogador object (66)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 257,
-  "fields": {
-    "action_time": "2024-11-07T12:23:46.311Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "67",
-    "object_repr": "TimeJogador object (67)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 258,
-  "fields": {
-    "action_time": "2024-11-07T12:23:52.276Z",
-    "user": 1,
-    "content_type": 14,
+    "action_time": "2024-11-18T18:55:51.208Z",
+    "user": 2,
+    "content_type": 13,
     "object_id": "68",
-    "object_repr": "TimeJogador object (68)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "object_repr": "Jogo object (68)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 259,
+  "pk": 436,
   "fields": {
-    "action_time": "2024-11-07T12:24:05.171Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "69",
-    "object_repr": "TimeJogador object (69)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-18T18:55:51.208Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "67",
+    "object_repr": "Jogo object (67)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 260,
+  "pk": 437,
   "fields": {
-    "action_time": "2024-11-07T12:24:11.700Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "70",
-    "object_repr": "TimeJogador object (70)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_time": "2024-11-18T18:55:51.208Z",
+    "user": 2,
+    "content_type": 13,
+    "object_id": "66",
+    "object_repr": "Jogo object (66)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 261,
+  "pk": 438,
   "fields": {
-    "action_time": "2024-11-07T12:24:14.819Z",
-    "user": 1,
-    "content_type": 14,
+    "action_time": "2024-11-18T18:55:51.208Z",
+    "user": 2,
+    "content_type": 13,
     "object_id": "65",
-    "object_repr": "TimeJogador object (65)",
-    "action_flag": 2,
-    "change_message": "[]"
+    "object_repr": "Jogo object (65)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 262,
+  "pk": 439,
   "fields": {
-    "action_time": "2024-11-07T12:24:17.518Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "62",
-    "object_repr": "TimeJogador object (62)",
-    "action_flag": 2,
-    "change_message": "[]"
+    "action_time": "2024-11-18T18:56:20.800Z",
+    "user": 2,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "Rodada object (5)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 263,
+  "pk": 440,
   "fields": {
-    "action_time": "2024-11-07T12:24:19.876Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "61",
-    "object_repr": "TimeJogador object (61)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 264,
-  "fields": {
-    "action_time": "2024-11-07T12:24:21.930Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "60",
-    "object_repr": "TimeJogador object (60)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 265,
-  "fields": {
-    "action_time": "2024-11-07T12:24:23.587Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "63",
-    "object_repr": "TimeJogador object (63)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 266,
-  "fields": {
-    "action_time": "2024-11-07T12:47:52.337Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "1",
-    "object_repr": "sao paulo - ecd3b68d-b492-4c1c-a459-06952ab7a276",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 267,
-  "fields": {
-    "action_time": "2024-11-07T12:47:55.876Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "8",
-    "object_repr": "São Paulo (8)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 268,
-  "fields": {
-    "action_time": "2024-11-07T12:48:48.394Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "2",
-    "object_repr": "corinthians - 5a02ba3b-22c5-4721-9096-dfb0851d8e9a",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 269,
-  "fields": {
-    "action_time": "2024-11-07T12:48:49.862Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "7",
-    "object_repr": "Corinthias (7)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 270,
-  "fields": {
-    "action_time": "2024-11-07T12:49:42.136Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "3",
-    "object_repr": "palmeiras - 5a3f6729-a1ef-4a4c-9865-ae95f15170d9",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 271,
-  "fields": {
-    "action_time": "2024-11-07T12:49:44.767Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "6",
-    "object_repr": "Palmeiras (6)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 272,
-  "fields": {
-    "action_time": "2024-11-07T12:50:51.441Z",
-    "user": 1,
-    "content_type": 7,
+    "action_time": "2024-11-18T18:56:20.800Z",
+    "user": 2,
+    "content_type": 11,
     "object_id": "4",
-    "object_repr": "paranaense - 3b95ac4e-a1e6-4a76-aff4-67f216f0de7d",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "object_repr": "Rodada object (4)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 273,
+  "pk": 441,
   "fields": {
-    "action_time": "2024-11-07T12:51:08.161Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "5",
-    "object_repr": "Athletico Paranaense (5)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 274,
-  "fields": {
-    "action_time": "2024-11-07T12:52:03.293Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "5",
-    "object_repr": "jec - 5e5edef0-11b7-4078-baf2-1a93749780c4",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 275,
-  "fields": {
-    "action_time": "2024-11-07T12:52:04.964Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "4",
-    "object_repr": "Joinville (4)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 276,
-  "fields": {
-    "action_time": "2024-11-07T12:53:01.582Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "6",
-    "object_repr": "cruzeiro - de5d2a93-eac0-4543-8f18-17e3469b2b7f",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 277,
-  "fields": {
-    "action_time": "2024-11-07T12:53:03.891Z",
-    "user": 1,
-    "content_type": 12,
+    "action_time": "2024-11-18T18:56:20.800Z",
+    "user": 2,
+    "content_type": 11,
     "object_id": "3",
-    "object_repr": "Cruzeiro (3)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
+    "object_repr": "Rodada object (3)",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 278,
+  "pk": 442,
   "fields": {
-    "action_time": "2024-11-07T12:55:20.568Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "7",
-    "object_repr": "flamengo - afde9507-a938-4728-bc27-7a8d8c83dc8e",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 279,
-  "fields": {
-    "action_time": "2024-11-07T12:55:23.394Z",
-    "user": 1,
-    "content_type": 12,
+    "action_time": "2024-11-18T18:56:20.800Z",
+    "user": 2,
+    "content_type": 11,
     "object_id": "2",
-    "object_repr": "Flamengo (2)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 280,
-  "fields": {
-    "action_time": "2024-11-07T12:55:59.714Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "8",
-    "object_repr": "botafogo - fbcc5d63-ef39-40c3-934b-5145b2a692f8",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 281,
-  "fields": {
-    "action_time": "2024-11-07T12:56:01.212Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "1",
-    "object_repr": "Botafogo (1)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 282,
-  "fields": {
-    "action_time": "2024-11-07T12:57:27.072Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "8",
-    "object_repr": "botafogo - fbcc5d63-ef39-40c3-934b-5145b2a692f8",
+    "object_repr": "Rodada object (2)",
     "action_flag": 3,
     "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 283,
+  "pk": 443,
   "fields": {
-    "action_time": "2024-11-07T12:57:27.072Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "7",
-    "object_repr": "flamengo - afde9507-a938-4728-bc27-7a8d8c83dc8e",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 284,
-  "fields": {
-    "action_time": "2024-11-07T12:57:27.072Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "6",
-    "object_repr": "cruzeiro - de5d2a93-eac0-4543-8f18-17e3469b2b7f",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 285,
-  "fields": {
-    "action_time": "2024-11-07T12:57:27.072Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "5",
-    "object_repr": "jec - 5e5edef0-11b7-4078-baf2-1a93749780c4",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 286,
-  "fields": {
-    "action_time": "2024-11-07T12:57:27.072Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "4",
-    "object_repr": "paranaense - 3b95ac4e-a1e6-4a76-aff4-67f216f0de7d",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 287,
-  "fields": {
-    "action_time": "2024-11-07T12:57:27.072Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "3",
-    "object_repr": "palmeiras - 5a3f6729-a1ef-4a4c-9865-ae95f15170d9",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 288,
-  "fields": {
-    "action_time": "2024-11-07T12:57:27.072Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "2",
-    "object_repr": "corinthians - 5a02ba3b-22c5-4721-9096-dfb0851d8e9a",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 289,
-  "fields": {
-    "action_time": "2024-11-07T12:57:27.072Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "1",
-    "object_repr": "sao paulo - ecd3b68d-b492-4c1c-a459-06952ab7a276",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 290,
-  "fields": {
-    "action_time": "2024-11-07T13:00:21.415Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "9",
-    "object_repr": "botafogo - 8ca11bcc-011b-4256-8eef-2b05949fa06c",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 291,
-  "fields": {
-    "action_time": "2024-11-07T13:00:23.197Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "1",
-    "object_repr": "Botafogo (1)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 292,
-  "fields": {
-    "action_time": "2024-11-07T13:08:12.388Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "10",
-    "object_repr": "sao paulo - cb7c0134-04ec-480d-9c7b-2bc4b3198e87",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 293,
-  "fields": {
-    "action_time": "2024-11-07T13:08:13.592Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "8",
-    "object_repr": "São Paulo (8)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 294,
-  "fields": {
-    "action_time": "2024-11-07T13:08:38.810Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "11",
-    "object_repr": "corinthians - f9fadc75-e277-42bc-83dd-a45ad82b7af7",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 295,
-  "fields": {
-    "action_time": "2024-11-07T13:08:44.022Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "7",
-    "object_repr": "Corinthias (7)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 296,
-  "fields": {
-    "action_time": "2024-11-07T13:09:00.850Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "12",
-    "object_repr": "palmeiras - 2accaf89-bf07-45d2-8333-eb4e449a9b9d",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 297,
-  "fields": {
-    "action_time": "2024-11-07T13:09:01.772Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "6",
-    "object_repr": "Palmeiras (6)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 298,
-  "fields": {
-    "action_time": "2024-11-07T13:09:40.384Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "13",
-    "object_repr": "paranaense - f346f771-3a3a-484b-a327-e4d876301ea2",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 299,
-  "fields": {
-    "action_time": "2024-11-07T13:09:42.719Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "5",
-    "object_repr": "Athletico Paranaense (5)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 300,
-  "fields": {
-    "action_time": "2024-11-07T13:10:25.934Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "14",
-    "object_repr": "jec - 35869fc9-ff19-4716-871e-8d389b268318",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 301,
-  "fields": {
-    "action_time": "2024-11-07T13:10:28.708Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "4",
-    "object_repr": "Joinville (4)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 302,
-  "fields": {
-    "action_time": "2024-11-07T13:10:43.404Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "15",
-    "object_repr": "cruzeiro - 32717a02-019c-42b5-871f-7c57d0c6f707",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 303,
-  "fields": {
-    "action_time": "2024-11-07T13:10:45.182Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "3",
-    "object_repr": "Cruzeiro (3)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 304,
-  "fields": {
-    "action_time": "2024-11-07T13:10:55.421Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "16",
-    "object_repr": " - 04fb02a1-584b-463f-bc53-0f74d34256ba",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 305,
-  "fields": {
-    "action_time": "2024-11-07T13:11:02.835Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "16",
-    "object_repr": "flamengo - 04fb02a1-584b-463f-bc53-0f74d34256ba",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 306,
-  "fields": {
-    "action_time": "2024-11-07T13:11:05.013Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "2",
-    "object_repr": "Flamengo (2)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Escudo\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 307,
-  "fields": {
-    "action_time": "2024-11-07T13:13:17.067Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "17",
-    "object_repr": "mineiro - 1d369fa8-7250-4f49-9b3b-4cc91e6f0c9b",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 308,
-  "fields": {
-    "action_time": "2024-11-07T13:13:18.508Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "9",
-    "object_repr": "atletico mineiro (9)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 309,
-  "fields": {
-    "action_time": "2024-11-07T13:14:36.289Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "17",
-    "object_repr": "mineiro - 1d369fa8-7250-4f49-9b3b-4cc91e6f0c9b",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"File\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 310,
-  "fields": {
-    "action_time": "2024-11-07T13:14:37.654Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "9",
-    "object_repr": "atletico mineiro (9)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 311,
-  "fields": {
-    "action_time": "2024-11-07T13:16:55.205Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "49",
-    "object_repr": "TimeJogador object (49)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 312,
-  "fields": {
-    "action_time": "2024-11-07T13:17:00.461Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "53",
-    "object_repr": "TimeJogador object (53)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 313,
-  "fields": {
-    "action_time": "2024-11-07T13:17:04.777Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "52",
-    "object_repr": "TimeJogador object (52)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 314,
-  "fields": {
-    "action_time": "2024-11-07T13:17:11.159Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "54",
-    "object_repr": "TimeJogador object (54)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 315,
-  "fields": {
-    "action_time": "2024-11-07T13:17:16.531Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "51",
-    "object_repr": "TimeJogador object (51)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 316,
-  "fields": {
-    "action_time": "2024-11-07T13:17:21.066Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "50",
-    "object_repr": "TimeJogador object (50)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 317,
-  "fields": {
-    "action_time": "2024-11-07T13:17:24.164Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "55",
-    "object_repr": "TimeJogador object (55)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 318,
-  "fields": {
-    "action_time": "2024-11-07T13:17:29.580Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "54",
-    "object_repr": "TimeJogador object (54)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 319,
-  "fields": {
-    "action_time": "2024-11-07T13:17:39.162Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "48",
-    "object_repr": "TimeJogador object (48)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 320,
-  "fields": {
-    "action_time": "2024-11-07T13:17:45.322Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "47",
-    "object_repr": "TimeJogador object (47)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 321,
-  "fields": {
-    "action_time": "2024-11-07T13:17:52.018Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "46",
-    "object_repr": "TimeJogador object (46)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 322,
-  "fields": {
-    "action_time": "2024-11-07T13:17:57.772Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "45",
-    "object_repr": "TimeJogador object (45)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 323,
-  "fields": {
-    "action_time": "2024-11-07T13:18:03.293Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "44",
-    "object_repr": "TimeJogador object (44)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 324,
-  "fields": {
-    "action_time": "2024-11-07T13:18:07.757Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "43",
-    "object_repr": "TimeJogador object (43)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 325,
-  "fields": {
-    "action_time": "2024-11-07T13:18:13.604Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "54",
-    "object_repr": "TimeJogador object (54)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 326,
-  "fields": {
-    "action_time": "2024-11-07T13:18:31.668Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "49",
-    "object_repr": "Vitor Roque (49)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 327,
-  "fields": {
-    "action_time": "2024-11-07T13:18:35.498Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "48",
-    "object_repr": "Cannobio (48)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 328,
-  "fields": {
-    "action_time": "2024-11-07T13:18:38.805Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "46",
-    "object_repr": "Khellven (46)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 329,
-  "fields": {
-    "action_time": "2024-11-07T13:18:43.219Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "42",
-    "object_repr": "Bento (42)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 330,
-  "fields": {
-    "action_time": "2024-11-07T13:18:47.884Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "43",
-    "object_repr": "Leo Linck (43)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 331,
-  "fields": {
-    "action_time": "2024-11-07T13:18:51.748Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "44",
-    "object_repr": "Thiago Heleno (44)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 332,
-  "fields": {
-    "action_time": "2024-11-07T13:18:59.742Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "50",
-    "object_repr": "Pablo (50)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 333,
-  "fields": {
-    "action_time": "2024-11-07T13:19:08.257Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "45",
-    "object_repr": "Pedro Henrique (45)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 334,
-  "fields": {
-    "action_time": "2024-11-07T13:19:14.854Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "45",
-    "object_repr": "Pedro Henrique (45)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 335,
-  "fields": {
-    "action_time": "2024-11-07T13:19:35.729Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "56",
-    "object_repr": "TimeJogador object (56)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 336,
-  "fields": {
-    "action_time": "2024-11-07T13:19:43.423Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "56",
-    "object_repr": "TimeJogador object (56)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Time\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 337,
-  "fields": {
-    "action_time": "2024-11-07T13:19:46.435Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "58",
-    "object_repr": "TimeJogador object (58)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 338,
-  "fields": {
-    "action_time": "2024-11-07T13:19:52.038Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "57",
-    "object_repr": "TimeJogador object (57)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Time\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 339,
-  "fields": {
-    "action_time": "2024-11-07T13:19:56.842Z",
-    "user": 1,
-    "content_type": 12,
-    "object_id": "5",
-    "object_repr": "Athletico Paranaense (5)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 340,
-  "fields": {
-    "action_time": "2024-11-07T13:23:02.480Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "40",
-    "object_repr": "TimeJogador object (40)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 341,
-  "fields": {
-    "action_time": "2024-11-07T13:23:20.672Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "37",
-    "object_repr": "TimeJogador object (37)",
-    "action_flag": 3,
-    "change_message": ""
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 342,
-  "fields": {
-    "action_time": "2024-11-07T13:29:55.425Z",
-    "user": 1,
+    "action_time": "2024-11-18T18:56:20.800Z",
+    "user": 2,
     "content_type": 11,
     "object_id": "1",
     "object_repr": "Rodada object (1)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
   "model": "admin.logentry",
-  "pk": 343,
+  "pk": 444,
   "fields": {
-    "action_time": "2024-11-07T13:32:43.096Z",
-    "user": 1,
-    "content_type": 13,
-    "object_id": "1",
-    "object_repr": "Jogo object (1)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 344,
-  "fields": {
-    "action_time": "2024-11-07T13:33:39.454Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "67",
-    "object_repr": "Hulk (67)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 345,
-  "fields": {
-    "action_time": "2024-11-07T13:34:02.328Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "68",
-    "object_repr": "Scarpa (68)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 346,
-  "fields": {
-    "action_time": "2024-11-07T13:35:37.093Z",
-    "user": 1,
-    "content_type": 13,
-    "object_id": "2",
-    "object_repr": "Jogo object (2)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 347,
-  "fields": {
-    "action_time": "2024-11-07T19:28:38.496Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "71",
-    "object_repr": "TimeJogador object (71)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 348,
-  "fields": {
-    "action_time": "2024-11-07T19:28:44.426Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "72",
-    "object_repr": "TimeJogador object (72)",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 349,
-  "fields": {
-    "action_time": "2024-11-07T20:35:08.243Z",
-    "user": 1,
-    "content_type": 13,
-    "object_id": "1",
-    "object_repr": "Jogo object (1)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 350,
-  "fields": {
-    "action_time": "2024-11-07T20:37:13.664Z",
-    "user": 1,
-    "content_type": 13,
-    "object_id": "2",
-    "object_repr": "Jogo object (2)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 351,
-  "fields": {
-    "action_time": "2024-11-08T11:47:36.250Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "18",
-    "object_repr": "gabi - cb229f63-da4b-43ec-9e02-b7d083b0ce9b",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 352,
-  "fields": {
-    "action_time": "2024-11-08T11:47:40.044Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "1",
-    "object_repr": "Gabriel Barbosa (1)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 353,
-  "fields": {
-    "action_time": "2024-11-08T11:47:56.683Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "19",
-    "object_repr": "rossi - 3ccfe3f2-5e44-4869-af69-e78b032be620",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 354,
-  "fields": {
-    "action_time": "2024-11-08T11:47:58.654Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "2",
-    "object_repr": "Rossi (2)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 355,
-  "fields": {
-    "action_time": "2024-11-08T11:48:19.588Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "20",
-    "object_repr": "julio ces - 5e61014b-0829-4377-a45c-7b4eb554c6f9",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 356,
-  "fields": {
-    "action_time": "2024-11-08T11:48:22.890Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "3",
-    "object_repr": "Julio Cesar (3)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 357,
-  "fields": {
-    "action_time": "2024-11-08T11:48:49.360Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "21",
-    "object_repr": " - 1d591bb5-e644-434b-acc2-4a72cdbba218",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 358,
-  "fields": {
-    "action_time": "2024-11-08T11:48:57.917Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "21",
-    "object_repr": "pedro - 1d591bb5-e644-434b-acc2-4a72cdbba218",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 359,
-  "fields": {
-    "action_time": "2024-11-08T11:48:59.734Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "4",
-    "object_repr": "Pedro Queixos (4)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 360,
-  "fields": {
-    "action_time": "2024-11-08T11:49:18.962Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "22",
-    "object_repr": "wesley - d7f1e3d6-5161-4c82-a403-21a643599505",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 361,
-  "fields": {
-    "action_time": "2024-11-08T11:49:21.334Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "5",
-    "object_repr": "Wesley (5)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 362,
-  "fields": {
-    "action_time": "2024-11-08T11:49:37.900Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "23",
-    "object_repr": "gerson - 8b807c2b-34bb-4e8e-9e99-12e0d89dc95c",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 363,
-  "fields": {
-    "action_time": "2024-11-08T11:49:39.635Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "6",
-    "object_repr": "Gerson (6)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 364,
-  "fields": {
-    "action_time": "2024-11-08T11:50:13.598Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "24",
-    "object_repr": "cassio - 1e83bba2-ec20-4bdb-9851-b3e645e64899",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 365,
-  "fields": {
-    "action_time": "2024-11-08T11:50:18.994Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "51",
-    "object_repr": "Cassio (51)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 366,
-  "fields": {
-    "action_time": "2024-11-08T11:50:41.491Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "25",
-    "object_repr": "miguel - cc4984a8-e511-4901-989a-7a10f6f05d57",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 367,
-  "fields": {
-    "action_time": "2024-11-08T11:50:43.405Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "52",
-    "object_repr": "Miguel (52)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 368,
-  "fields": {
-    "action_time": "2024-11-08T11:51:04.568Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "26",
-    "object_repr": "fagner - 4a81bbc0-9b94-4010-93fa-ba7d32d8bc4e",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 369,
-  "fields": {
-    "action_time": "2024-11-08T11:51:06.211Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "53",
-    "object_repr": "Fagner (53)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 370,
-  "fields": {
-    "action_time": "2024-11-08T11:51:45.840Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "27",
-    "object_repr": "gil - 0bd576c6-5962-4b6b-8350-d3edd2087966",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 371,
-  "fields": {
-    "action_time": "2024-11-08T11:51:57.303Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "54",
-    "object_repr": "Gil (54)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 372,
-  "fields": {
-    "action_time": "2024-11-08T11:52:41.539Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "28",
-    "object_repr": "renato augusto - e19eab8f-914d-4ff3-be0d-0ffe385c08e8",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 373,
-  "fields": {
-    "action_time": "2024-11-08T11:52:46.188Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "55",
-    "object_repr": "Renato Augusto (55)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 374,
-  "fields": {
-    "action_time": "2024-11-08T11:53:07.603Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "29",
-    "object_repr": "roger guedes - 970604f5-c5a5-47f3-af8e-7e35fb88a583",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 375,
-  "fields": {
-    "action_time": "2024-11-08T11:53:10.411Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "56",
-    "object_repr": "Roger Guedes (56)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 376,
-  "fields": {
-    "action_time": "2024-11-08T11:53:51.427Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "30",
-    "object_repr": "yuri alberto - a034eac6-9cee-4bc3-9d99-6250bed98614",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 377,
-  "fields": {
-    "action_time": "2024-11-08T11:53:53.639Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "57",
-    "object_repr": "Yuri Alberto (57)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 378,
-  "fields": {
-    "action_time": "2024-11-08T11:54:07.061Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "31",
-    "object_repr": "depay - d5df9b4f-b671-4c03-8cbb-5c9ad9564170",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 379,
-  "fields": {
-    "action_time": "2024-11-08T11:54:09.292Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "58",
-    "object_repr": "Memphis Depay (58)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 380,
-  "fields": {
-    "action_time": "2024-11-12T11:34:44.218Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "68",
-    "object_repr": "Scarpa (68)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 381,
-  "fields": {
-    "action_time": "2024-11-12T11:34:47.248Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "67",
-    "object_repr": "Hulk (67)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 382,
-  "fields": {
-    "action_time": "2024-11-12T11:34:49.956Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "66",
-    "object_repr": "Patrick (66)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 383,
-  "fields": {
-    "action_time": "2024-11-12T11:34:53.983Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "66",
-    "object_repr": "Patrick (66)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 384,
-  "fields": {
-    "action_time": "2024-11-12T11:35:02.929Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "66",
-    "object_repr": "Patrick (66)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 385,
-  "fields": {
-    "action_time": "2024-11-12T11:35:07.463Z",
-    "user": 1,
-    "content_type": 14,
-    "object_id": "66",
-    "object_repr": "TimeJogador object (66)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 386,
-  "fields": {
-    "action_time": "2024-11-12T11:40:51.593Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "34",
-    "object_repr": "igor jesus - 9f2f09a3-5440-423c-82c0-1317d5a71b1b",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 387,
-  "fields": {
-    "action_time": "2024-11-12T11:40:52.651Z",
-    "user": 1,
-    "content_type": 10,
+    "action_time": "2024-11-18T19:51:47.182Z",
+    "user": 2,
+    "content_type": 12,
     "object_id": "7",
-    "object_repr": "Igor Jesus (7)",
+    "object_repr": "Corinthias (7)",
     "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 388,
-  "fields": {
-    "action_time": "2024-11-12T12:03:25.866Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "16",
-    "object_repr": "Everson (16)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 389,
-  "fields": {
-    "action_time": "2024-11-12T12:03:51.711Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "16",
-    "object_repr": "John (16)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Nome\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 390,
-  "fields": {
-    "action_time": "2024-11-12T12:20:57.808Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "7",
-    "object_repr": "Igor Jesus (7)",
-    "action_flag": 2,
-    "change_message": "[]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 391,
-  "fields": {
-    "action_time": "2024-11-12T12:21:27.971Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "35",
-    "object_repr": "Tiquinho Soares - b79ed42e-b13d-43ba-9ce3-e74685090d7d",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 392,
-  "fields": {
-    "action_time": "2024-11-12T12:21:30.001Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "8",
-    "object_repr": "Tiquinho Soares (8)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 393,
-  "fields": {
-    "action_time": "2024-11-12T12:22:21.321Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "36",
-    "object_repr": "Marçal - d1e257f4-e5c9-41b1-bc7e-e929c2a593b2",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 394,
-  "fields": {
-    "action_time": "2024-11-12T12:22:22.793Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "9",
-    "object_repr": "Marçal (9)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 395,
-  "fields": {
-    "action_time": "2024-11-12T12:22:37.316Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "37",
-    "object_repr": "Lucas Perri - ff9c41b6-8344-4824-8c61-81d1971409d6",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 396,
-  "fields": {
-    "action_time": "2024-11-12T12:22:38.434Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "10",
-    "object_repr": "Lucas Perri (10)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 397,
-  "fields": {
-    "action_time": "2024-11-12T12:22:53.503Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "38",
-    "object_repr": "Fabricio Bruno - efdcea3b-9a27-425a-b666-89a3ab3efeeb",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 398,
-  "fields": {
-    "action_time": "2024-11-12T12:22:54.476Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "11",
-    "object_repr": "Fabricio Bruno (11)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 399,
-  "fields": {
-    "action_time": "2024-11-12T12:23:07.484Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "39",
-    "object_repr": "Rodrigo Caio - d3b6a836-6fc1-45fe-9736-35332da70f80",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 400,
-  "fields": {
-    "action_time": "2024-11-12T12:23:09.060Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "12",
-    "object_repr": "Rodrigo Caio (12)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 401,
-  "fields": {
-    "action_time": "2024-11-12T12:23:23.327Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "40",
-    "object_repr": "Adryelson - f4fe1f22-0cc3-4018-966b-4b7f99490ff2",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 402,
-  "fields": {
-    "action_time": "2024-11-12T12:23:24.388Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "13",
-    "object_repr": "Adryelson (13)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 403,
-  "fields": {
-    "action_time": "2024-11-12T12:24:58.480Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "41",
-    "object_repr": "Luis Henrique - 64a537b9-79df-4b18-9f0b-838c9eb276ac",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 404,
-  "fields": {
-    "action_time": "2024-11-12T12:24:59.038Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "14",
-    "object_repr": "Luis Henrique (14)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 405,
-  "fields": {
-    "action_time": "2024-11-12T12:25:13.106Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "42",
-    "object_repr": "Gatito - 2e867b08-94a5-4953-b80e-aa9a776e32e5",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 406,
-  "fields": {
-    "action_time": "2024-11-12T12:25:14.737Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "15",
-    "object_repr": "Gatito Fernandes (15)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 407,
-  "fields": {
-    "action_time": "2024-11-12T12:25:32.384Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "43",
-    "object_repr": "John - d460f0d1-b3d3-45d7-b5fe-3211b72e2647",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 408,
-  "fields": {
-    "action_time": "2024-11-12T12:25:33.450Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "16",
-    "object_repr": "John (16)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 409,
-  "fields": {
-    "action_time": "2024-11-12T12:25:49.726Z",
-    "user": 1,
-    "content_type": 7,
-    "object_id": "44",
-    "object_repr": "Weverton - 2b05c359-7aca-4169-ab24-f5a6c3bfe946",
-    "action_flag": 1,
-    "change_message": "[{\"added\": {}}]"
-  }
-},
-{
-  "model": "admin.logentry",
-  "pk": 410,
-  "fields": {
-    "action_time": "2024-11-12T12:25:51.556Z",
-    "user": 1,
-    "content_type": 10,
-    "object_id": "17",
-    "object_repr": "Weverton (17)",
-    "action_flag": 2,
-    "change_message": "[{\"changed\": {\"fields\": [\"Foto\"]}}]"
+    "change_message": "[{\"changed\": {\"fields\": [\"Gols contra\", \"Derrota\"]}}]"
   }
 },
 {
@@ -5948,6 +1059,14 @@
 },
 {
   "model": "sessions.session",
+  "pk": "ahu4slbbf7bi1olc1uz020qqyumlxuc0",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyEVWGA9evcbyAKLVA1NSnsy_rtt0oMmc5r3Zt4i0LrUsHaew5jFRShx-u0ipSe3HeQHtfsk09SWeYxyV-RBu7xNmV_Xw_07qNTrtnYaDBVzZoiYnI2I0Vir0Q_ACAwFSDMzZrRWAbgtxSpNPhWX_JDF5wvQrjd7:1tBIEE:lJhL0LYXOESqy6woFAjctNLjInIOr5d0SkqtXT42jw0",
+    "expire_date": "2024-11-27T18:36:34.702Z"
+  }
+},
+{
+  "model": "sessions.session",
   "pk": "n6r8kh68at6jfiitcnlko0rynenvxjbj",
   "fields": {
     "session_data": ".eJxVjMsOwiAQRf-FtSFAeRSX7v0GAjODVA0kpV0Z_11JutDdzT0n58VC3LcS9k5rWJCdmWSn3y9FeFAdAO-x3hqHVrd1SXwo_KCdXxvS83K4f4ESexnZ2QmYJE5I0niaVVLkU7RkTHbfCSJmZSFnQeA9ktPKEBJ6q7UxGtn7A_FVOHo:1t90QW:_DY75PXL_Eqa-QUlc-r3TXGc0HNBF0ZJLdbkGPdEWPw",
@@ -6376,29 +1495,13 @@
 },
 {
   "model": "core.user",
-  "pk": 1,
+  "pk": 2,
   "fields": {
-    "password": "pbkdf2_sha256$870000$YMqI3oobyLuOKuwrSdJbfO$G6oyUb/HSu+v6BIsp4aGqvduK7Xago7H4ymWo1l3Cdc=",
-    "last_login": "2024-11-12T11:34:31.829Z",
+    "password": "pbkdf2_sha256$870000$2Qp3yYWsh45kS7JbOdZDP4$IzV0JHOPc/suc/uoL+gAcoKQF0rUwYuB2yLj1a1n4ZU=",
+    "last_login": "2024-11-13T18:36:34.698Z",
     "is_superuser": true,
     "passage_id": "",
-    "email": "a@a.com",
-    "name": "",
-    "is_active": true,
-    "is_staff": true,
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "core.user",
-  "pk": 3,
-  "fields": {
-    "password": "pbkdf2_sha256$870000$07mrhUx15K5Mh8BvYef8Z3$35how53GGXnfT6PZVapdCgaEbn0cIjEe3SULBC9VFFY=",
-    "last_login": null,
-    "is_superuser": true,
-    "passage_id": "8e8904ca-fc2f-4b59-8c11-6630ac92f60a",
-    "email": "monta@gmail.com",
+    "email": "admin@admin.com",
     "name": "",
     "is_active": true,
     "is_staff": true,
@@ -6411,7 +1514,8 @@
   "pk": 1,
   "fields": {
     "nome": "Copão",
-    "ano": 2024
+    "ano": 2024,
+    "mata_mata": false
   }
 },
 {
@@ -6422,9 +1526,9 @@
     "gols_pro": 0,
     "gols_contra": 0,
     "vitoria": 0,
-    "empate": 1,
+    "empate": 0,
     "derrota": 0,
-    "pontos": 1,
+    "pontos": 0,
     "campeonato": 1,
     "escudo": 9
   }
@@ -6434,12 +1538,12 @@
   "pk": 2,
   "fields": {
     "nome": "Flamengo",
-    "gols_pro": 1,
-    "gols_contra": 1,
+    "gols_pro": 0,
+    "gols_contra": 0,
     "vitoria": 0,
-    "empate": 1,
+    "empate": 0,
     "derrota": 0,
-    "pontos": 1,
+    "pontos": 0,
     "campeonato": 1,
     "escudo": 16
   }
@@ -6449,12 +1553,12 @@
   "pk": 3,
   "fields": {
     "nome": "Cruzeiro",
-    "gols_pro": 1,
-    "gols_contra": 1,
+    "gols_pro": 0,
+    "gols_contra": 0,
     "vitoria": 0,
-    "empate": 1,
+    "empate": 0,
     "derrota": 0,
-    "pontos": 1,
+    "pontos": 0,
     "campeonato": 1,
     "escudo": 15
   }
@@ -6464,12 +1568,12 @@
   "pk": 4,
   "fields": {
     "nome": "Joinville",
-    "gols_pro": 3,
-    "gols_contra": 1,
-    "vitoria": 1,
+    "gols_pro": 0,
+    "gols_contra": 0,
+    "vitoria": 0,
     "empate": 0,
     "derrota": 0,
-    "pontos": 3,
+    "pontos": 0,
     "campeonato": 1,
     "escudo": 14
   }
@@ -6479,12 +1583,12 @@
   "pk": 6,
   "fields": {
     "nome": "Palmeiras",
-    "gols_pro": 1,
-    "gols_contra": 5,
+    "gols_pro": 0,
+    "gols_contra": 0,
     "vitoria": 0,
-    "empate": 1,
-    "derrota": 2,
-    "pontos": 1,
+    "empate": 0,
+    "derrota": 0,
+    "pontos": 0,
     "campeonato": 1,
     "escudo": 12
   }
@@ -6524,127 +1628,181 @@
   "pk": 9,
   "fields": {
     "nome": "atletico mineiro",
-    "gols_pro": 2,
+    "gols_pro": 0,
     "gols_contra": 0,
-    "vitoria": 1,
+    "vitoria": 0,
     "empate": 0,
     "derrota": 0,
-    "pontos": 3,
+    "pontos": 0,
     "campeonato": 1,
     "escudo": 17
   }
 },
 {
   "model": "core.rodada",
-  "pk": 1,
+  "pk": 6,
   "fields": {
     "numero_rodada": 1,
-    "data_inicio": "2024-11-07",
-    "data_termino": "2024-11-07",
+    "campeonato": 1
+  }
+},
+{
+  "model": "core.rodada",
+  "pk": 7,
+  "fields": {
+    "numero_rodada": 1,
+    "campeonato": 1
+  }
+},
+{
+  "model": "core.rodada",
+  "pk": 8,
+  "fields": {
+    "numero_rodada": 2,
+    "campeonato": 1
+  }
+},
+{
+  "model": "core.rodada",
+  "pk": 9,
+  "fields": {
+    "numero_rodada": 3,
+    "campeonato": 1
+  }
+},
+{
+  "model": "core.rodada",
+  "pk": 10,
+  "fields": {
+    "numero_rodada": 4,
+    "campeonato": 1
+  }
+},
+{
+  "model": "core.rodada",
+  "pk": 11,
+  "fields": {
+    "numero_rodada": 5,
     "campeonato": 1
   }
 },
 {
   "model": "core.jogo",
-  "pk": 1,
+  "pk": 76,
   "fields": {
-    "data": "2024-11-07",
-    "horario": "10:29:39",
+    "data": "2012-12-12",
+    "horario": "12:12:00",
     "endereco": "quadra",
-    "rodada": 1,
+    "rodada": 6,
+    "time_mandante": 1,
+    "time_visitante": 2,
+    "gols": [
+      {
+        "id": 1,
+        "jogador": 8,
+        "time": 1,
+        "gol_pro": true
+      },
+      {
+        "id": 2,
+        "jogador": 8,
+        "time": 1,
+        "gol_pro": true
+      }
+    ],
+    "vencedor": 1,
+    "cartoes": "",
+    "tipo_jogo": "GP"
+  }
+},
+{
+  "model": "core.jogo",
+  "pk": 77,
+  "fields": {
+    "data": "0121-12-12",
+    "horario": "12:21:00",
+    "endereco": "q",
+    "rodada": 6,
+    "time_mandante": 3,
+    "time_visitante": 1,
+    "gols": [
+      {
+        "id": 1,
+        "jogador": 9,
+        "time": 1,
+        "gol_pro": true
+      }
+    ],
+    "vencedor": 1,
+    "cartoes": "",
+    "tipo_jogo": "GP"
+  }
+},
+{
+  "model": "core.jogo",
+  "pk": 78,
+  "fields": {
+    "data": "0013-02-13",
+    "horario": "12:22:00",
+    "endereco": "quadra",
+    "rodada": 6,
+    "time_mandante": 3,
+    "time_visitante": 1,
+    "gols": [
+      {
+        "id": 1,
+        "jogador": 7,
+        "time": 1,
+        "gol_pro": true
+      },
+      {
+        "id": 2,
+        "jogador": 7,
+        "time": 1,
+        "gol_pro": true
+      },
+      {
+        "id": 3,
+        "jogador": 7,
+        "time": 1,
+        "gol_pro": true
+      }
+    ],
+    "vencedor": 1,
+    "cartoes": "",
+    "tipo_jogo": "GP"
+  }
+},
+{
+  "model": "core.jogo",
+  "pk": 79,
+  "fields": {
+    "data": "2022-12-12",
+    "horario": "12:00:00",
+    "endereco": null,
+    "rodada": 11,
+    "time_mandante": 1,
+    "time_visitante": 4,
+    "gols": null,
+    "vencedor": null,
+    "cartoes": null,
+    "tipo_jogo": "SF"
+  }
+},
+{
+  "model": "core.jogo",
+  "pk": 80,
+  "fields": {
+    "data": "2022-12-12",
+    "horario": "12:00:00",
+    "endereco": null,
+    "rodada": 11,
     "time_mandante": 2,
     "time_visitante": 3,
-    "gols": [
-      {
-        "time": 3,
-        "gol_pro": true,
-        "jogador": 1
-      },
-      {
-        "time": 2,
-        "gol_pro": true,
-        "jogador": 1
-      }
-    ],
+    "gols": null,
     "vencedor": null,
-    "cartoes": null
-  }
-},
-{
-  "model": "core.jogo",
-  "pk": 2,
-  "fields": {
-    "data": "2024-11-07",
-    "horario": "10:34:07",
-    "endereco": "quadra",
-    "rodada": 1,
-    "time_mandante": 9,
-    "time_visitante": 6,
-    "gols": [
-      {
-        "time": 9,
-        "gol_pro": true,
-        "jogador": 68
-      },
-      {
-        "time": 9,
-        "gol_pro": true,
-        "jogador": 68
-      }
-    ],
-    "vencedor": 9,
-    "cartoes": null
-  }
-},
-{
-  "model": "core.jogo",
-  "pk": 3,
-  "fields": {
-    "data": "2024-11-08",
-    "horario": "00:13:00",
-    "endereco": "quadra",
-    "rodada": 1,
-    "time_mandante": 4,
-    "time_visitante": 6,
-    "gols": [
-      {
-        "time": 4,
-        "gol_pro": true,
-        "jogador": 2
-      },
-      {
-        "time": 6,
-        "gol_pro": true,
-        "jogador": 2
-      },
-      {
-        "time": 4,
-        "gol_pro": true,
-        "jogador": 2
-      },
-      {
-        "time": 4,
-        "gol_pro": true,
-        "jogador": 2
-      }
-    ],
-    "vencedor": 4,
-    "cartoes": null
-  }
-},
-{
-  "model": "core.jogo",
-  "pk": 6,
-  "fields": {
-    "data": "2024-11-15",
-    "horario": "04:34:00",
-    "endereco": "quadra",
-    "rodada": 1,
-    "time_mandante": 1,
-    "time_visitante": 6,
-    "gols": [],
-    "vencedor": null,
-    "cartoes": null
+    "cartoes": null,
+    "tipo_jogo": "SF"
   }
 },
 {
@@ -6656,7 +1814,7 @@
     "email": "gabigoldopiruzinho@HOTmail.com",
     "numero": 99,
     "foto": 18,
-    "posicao": 4
+    "posicao": "4"
   }
 },
 {
@@ -6668,7 +1826,7 @@
     "email": "goleirodoflamengo@gmail.com",
     "numero": 1,
     "foto": 19,
-    "posicao": 1
+    "posicao": "1"
   }
 },
 {
@@ -6680,7 +1838,7 @@
     "email": "goleiroaposentadodoflamengo@gmail.com",
     "numero": 12,
     "foto": 20,
-    "posicao": 1
+    "posicao": "1"
   }
 },
 {
@@ -6692,7 +1850,7 @@
     "email": "queixadadasilva@gmail.com",
     "numero": 9,
     "foto": 21,
-    "posicao": 4
+    "posicao": "4"
   }
 },
 {
@@ -6704,7 +1862,7 @@
     "email": "wesleydasilva@gmail.com",
     "numero": 2,
     "foto": 22,
-    "posicao": 3
+    "posicao": "3"
   }
 },
 {
@@ -6716,7 +1874,7 @@
     "email": "gersinhoespancaxota.com@HOTmail.com",
     "numero": 8,
     "foto": 23,
-    "posicao": 3
+    "posicao": "3"
   }
 },
 {
@@ -6728,7 +1886,7 @@
     "email": "paidomineiro@gmail.com",
     "numero": 10,
     "foto": 34,
-    "posicao": 4
+    "posicao": "4"
   }
 },
 {
@@ -6740,7 +1898,7 @@
     "email": "soaresdasivlaljunior@gmail.com",
     "numero": 99,
     "foto": 35,
-    "posicao": 4
+    "posicao": "4"
   }
 },
 {
@@ -6752,7 +1910,7 @@
     "email": "sorrisinhopracamera2023@gmail.com",
     "numero": 66,
     "foto": 36,
-    "posicao": 2
+    "posicao": "2"
   }
 },
 {
@@ -6764,7 +1922,7 @@
     "email": "perridasilva@gmail.com",
     "numero": 43,
     "foto": 37,
-    "posicao": 3
+    "posicao": "3"
   }
 },
 {
@@ -6776,7 +1934,7 @@
     "email": "flashdasilva@gmail.com",
     "numero": 3,
     "foto": 38,
-    "posicao": 2
+    "posicao": "2"
   }
 },
 {
@@ -6788,7 +1946,7 @@
     "email": "administradordodm@gmail.com",
     "numero": 3,
     "foto": 39,
-    "posicao": 2
+    "posicao": "2"
   }
 },
 {
@@ -6800,7 +1958,7 @@
     "email": "zagueiro@gmail.com",
     "numero": 3,
     "foto": 40,
-    "posicao": 2
+    "posicao": "2"
   }
 },
 {
@@ -6812,7 +1970,7 @@
     "email": "corredor@gmail.com",
     "numero": 21,
     "foto": 41,
-    "posicao": 3
+    "posicao": "3"
   }
 },
 {
@@ -6824,7 +1982,7 @@
     "email": "goleirodobotafogo@gmail.com",
     "numero": 1,
     "foto": 42,
-    "posicao": 1
+    "posicao": "1"
   }
 },
 {
@@ -6836,7 +1994,7 @@
     "email": "goleirobotafogo2@gmail.com",
     "numero": 33,
     "foto": 43,
-    "posicao": 1
+    "posicao": "1"
   }
 },
 {
@@ -6848,7 +2006,7 @@
     "email": "wevertonpalmeiras@gmail.com",
     "numero": 1,
     "foto": 44,
-    "posicao": 1
+    "posicao": "1"
   }
 },
 {
@@ -6860,7 +2018,7 @@
     "email": "goleiro22@gmail.com",
     "numero": 2,
     "foto": null,
-    "posicao": 1
+    "posicao": "1"
   }
 },
 {
@@ -6872,7 +2030,7 @@
     "email": "zagueiroviado@gmail.com",
     "numero": 3,
     "foto": null,
-    "posicao": 2
+    "posicao": "2"
   }
 },
 {
@@ -6884,7 +2042,7 @@
     "email": "zagueiroviado2@gmail.com",
     "numero": 5,
     "foto": null,
-    "posicao": 2
+    "posicao": "2"
   }
 },
 {
@@ -6896,7 +2054,7 @@
     "email": "lateralfilhodaputa@gmail.com",
     "numero": 4,
     "foto": null,
-    "posicao": 3
+    "posicao": "3"
   }
 },
 {
@@ -6908,7 +2066,7 @@
     "email": "volantedebosta@gmail.com",
     "numero": 5,
     "foto": null,
-    "posicao": 3
+    "posicao": "3"
   }
 },
 {
@@ -6920,7 +2078,7 @@
     "email": "notificacaotelefoneronybicicleta2024highlitghs@gmail.com",
     "numero": 99,
     "foto": null,
-    "posicao": 4
+    "posicao": "4"
   }
 },
 {
@@ -6932,7 +2090,7 @@
     "email": "meiocampisstaviadodocaralho@gmail.com",
     "numero": 10,
     "foto": null,
-    "posicao": 4
+    "posicao": "4"
   }
 },
 {
@@ -6944,7 +2102,7 @@
     "email": "goleirorcruzeiro@gmail.com",
     "numero": 1,
     "foto": null,
-    "posicao": 1
+    "posicao": "1"
   }
 },
 {
@@ -6956,7 +2114,7 @@
     "email": "anderson@gmail.com",
     "numero": 12,
     "foto": null,
-    "posicao": 1
+    "posicao": "1"
   }
 },
 {
@@ -6968,7 +2126,7 @@
     "email": "lateralviado@gmail.com",
     "numero": 2,
     "foto": null,
-    "posicao": 2
+    "posicao": "2"
   }
 },
 {
@@ -6980,7 +2138,7 @@
     "email": "zagueirinho@gmail.com",
     "numero": 3,
     "foto": null,
-    "posicao": 2
+    "posicao": "2"
   }
 },
 {
@@ -6992,7 +2150,7 @@
     "email": "william@gmail.com",
     "numero": 28,
     "foto": null,
-    "posicao": 3
+    "posicao": "3"
   }
 },
 {
@@ -7004,7 +2162,7 @@
     "email": "eumateusvitalviado@gmail.com",
     "numero": 8,
     "foto": null,
-    "posicao": 3
+    "posicao": "3"
   }
 },
 {
@@ -7016,7 +2174,7 @@
     "email": "gordinhodasilv@gmail.com",
     "numero": 9,
     "foto": null,
-    "posicao": 4
+    "posicao": "4"
   }
 },
 {
@@ -7028,7 +2186,7 @@
     "email": "matheuspereira@gmail.com",
     "numero": 10,
     "foto": null,
-    "posicao": 4
+    "posicao": "4"
   }
 },
 {
@@ -7040,7 +2198,7 @@
     "email": "matheusgoleirodojecoficial@gmail.com",
     "numero": 7,
     "foto": null,
-    "posicao": 1
+    "posicao": "1"
   }
 },
 {
@@ -7052,7 +2210,7 @@
     "email": "patogoleirogoleirojecjec@gmail.com",
     "numero": 1,
     "foto": null,
-    "posicao": 1
+    "posicao": "1"
   }
 },
 {
@@ -7064,7 +2222,7 @@
     "email": "pipipi@gmail.com",
     "numero": 2,
     "foto": null,
-    "posicao": 2
+    "posicao": "2"
   }
 },
 {
@@ -7076,7 +2234,7 @@
     "email": "ernani@gmail.com",
     "numero": 3,
     "foto": null,
-    "posicao": 2
+    "posicao": "2"
   }
 },
 {
@@ -7088,7 +2246,7 @@
     "email": "xuxinhadasilva@gmail.com",
     "numero": 4,
     "foto": null,
-    "posicao": 3
+    "posicao": "3"
   }
 },
 {
@@ -7100,7 +2258,7 @@
     "email": "reidasilva@gmail.com",
     "numero": 5,
     "foto": null,
-    "posicao": 3
+    "posicao": "3"
   }
 },
 {
@@ -7112,7 +2270,7 @@
     "email": "roninaoeorustico@yahuo.com",
     "numero": 9,
     "foto": null,
-    "posicao": 4
+    "posicao": "4"
   }
 },
 {
@@ -7124,7 +2282,7 @@
     "email": "igorcosta@xerecudo.comdasilva",
     "numero": 11,
     "foto": null,
-    "posicao": 4
+    "posicao": "4"
   }
 },
 {
@@ -7136,7 +2294,7 @@
     "email": "cassiogoleirodasilva@gmail.com",
     "numero": 12,
     "foto": 24,
-    "posicao": 1
+    "posicao": "1"
   }
 },
 {
@@ -7148,7 +2306,7 @@
     "email": "goleiro2@gmail.com",
     "numero": 1,
     "foto": 25,
-    "posicao": 1
+    "posicao": "1"
   }
 },
 {
@@ -7160,7 +2318,7 @@
     "email": "imundodasilvaarrombado@gmail.com",
     "numero": 66,
     "foto": 26,
-    "posicao": 2
+    "posicao": "2"
   }
 },
 {
@@ -7172,7 +2330,7 @@
     "email": "gilpernadura@gmail.com",
     "numero": 3,
     "foto": 27,
-    "posicao": 2
+    "posicao": "2"
   }
 },
 {
@@ -7184,7 +2342,7 @@
     "email": "r9@gmail.com",
     "numero": 8,
     "foto": 28,
-    "posicao": 3
+    "posicao": "3"
   }
 },
 {
@@ -7196,7 +2354,7 @@
     "email": "roginho9@gmail.com",
     "numero": 9,
     "foto": 29,
-    "posicao": 3
+    "posicao": "3"
   }
 },
 {
@@ -7208,7 +2366,7 @@
     "email": "yuri9@gmail.com",
     "numero": 99,
     "foto": 30,
-    "posicao": 4
+    "posicao": "4"
   }
 },
 {
@@ -7220,7 +2378,7 @@
     "email": "depaulnomedepai@gmail.com",
     "numero": 11,
     "foto": 31,
-    "posicao": 4
+    "posicao": "4"
   }
 },
 {
@@ -7232,7 +2390,7 @@
     "email": "goleiro@gmail.com",
     "numero": 1,
     "foto": null,
-    "posicao": 1
+    "posicao": "1"
   }
 },
 {
@@ -7244,7 +2402,7 @@
     "email": "goleiromundial@gmail.com",
     "numero": 12,
     "foto": null,
-    "posicao": 1
+    "posicao": "1"
   }
 },
 {
@@ -7256,7 +2414,7 @@
     "email": "diegocossta@gmail.com",
     "numero": 3,
     "foto": null,
-    "posicao": 2
+    "posicao": "2"
   }
 },
 {
@@ -7268,7 +2426,7 @@
     "email": "arboleda@gmail.com",
     "numero": 3,
     "foto": null,
-    "posicao": 2
+    "posicao": "2"
   }
 },
 {
@@ -7280,7 +2438,7 @@
     "email": "alisson@gmail.com",
     "numero": 4,
     "foto": null,
-    "posicao": 3
+    "posicao": "3"
   }
 },
 {
@@ -7292,7 +2450,7 @@
     "email": "peralta@gmail.com",
     "numero": 4,
     "foto": null,
-    "posicao": 3
+    "posicao": "3"
   }
 },
 {
@@ -7304,7 +2462,7 @@
     "email": "calleri@gmail.com",
     "numero": 10,
     "foto": null,
-    "posicao": 4
+    "posicao": "4"
   }
 },
 {
@@ -7316,7 +2474,7 @@
     "email": "patrick@gmail.com",
     "numero": 9,
     "foto": null,
-    "posicao": 4
+    "posicao": "4"
   }
 },
 {
@@ -7328,7 +2486,7 @@
     "email": "lucas@gmnail.com",
     "numero": 7,
     "foto": 32,
-    "posicao": 4
+    "posicao": "4"
   }
 },
 {
@@ -7340,7 +2498,7 @@
     "email": "soaresdasivlaljunior@gmail.com",
     "numero": 6,
     "foto": 33,
-    "posicao": 3
+    "posicao": "3"
   }
 },
 {
