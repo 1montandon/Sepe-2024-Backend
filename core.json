@@ -442,6 +442,19 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 445,
+  "fields": {
+    "action_time": "2024-11-27T17:19:14.818Z",
+    "user": 3,
+    "content_type": 7,
+    "object_id": "45",
+    "object_repr": "trunks - f770db2e-16bd-4b51-83cb-f250101440f2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -1059,6 +1072,14 @@
 },
 {
   "model": "sessions.session",
+  "pk": "2kgm0si6lidfqwinyg5whaqmutvnsm3v",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFDeAx16d5vIAMMUjWQlHZl_Hdt0oVu7znnvkSgba1hG7yEOYuz0OL0u0VKD247yHdqty5Tb-syR7kr8qBDXnvm5-Vw_w4qjfqtUXGByJaZtY7ZFDCEuhhvvXMTOrDAmFFTMhHMxF4pDa4wJEyqZCPeH-roN9g:1tGLgQ:_dIw-M7M46TKwm1OJXhsqtZhagJWfqEy5mp2y_DFiwU",
+    "expire_date": "2024-12-11T17:18:34.233Z"
+  }
+},
+{
+  "model": "sessions.session",
   "pk": "ahu4slbbf7bi1olc1uz020qqyumlxuc0",
   "fields": {
     "session_data": ".eJxVjMEOwiAQRP-FsyEVWGA9evcbyAKLVA1NSnsy_rtt0oMmc5r3Zt4i0LrUsHaew5jFRShx-u0ipSe3HeQHtfsk09SWeYxyV-RBu7xNmV_Xw_07qNTrtnYaDBVzZoiYnI2I0Vir0Q_ACAwFSDMzZrRWAbgtxSpNPhWX_JDF5wvQrjd7:1tBIEE:lJhL0LYXOESqy6woFAjctNLjInIOr5d0SkqtXT42jw0",
@@ -1494,14 +1515,39 @@
   }
 },
 {
+  "model": "uploader.image",
+  "pk": 45,
+  "fields": {
+    "attachment_key": "f770db2e-16bd-4b51-83cb-f250101440f2",
+    "public_id": "b9e616b9-8f9d-4f40-b949-adbe39a8d2e5",
+    "file": "images/b9e616b9-8f9d-4f40-b949-adbe39a8d2e5.jpg",
+    "description": "trunks",
+    "uploaded_on": "2024-11-27T17:19:14.818Z"
+  }
+},
+{
   "model": "core.user",
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$870000$2Qp3yYWsh45kS7JbOdZDP4$IzV0JHOPc/suc/uoL+gAcoKQF0rUwYuB2yLj1a1n4ZU=",
     "last_login": "2024-11-13T18:36:34.698Z",
     "is_superuser": true,
-    "passage_id": "",
     "email": "admin@admin.com",
+    "name": "",
+    "is_active": true,
+    "is_staff": true,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "core.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$a974lGhH2b5QSXDqtBa14A$Ssf+7XPeYf7Afh40wBtCm15gI4Q2urpwkgr7Sxlqtd8=",
+    "last_login": "2024-11-27T17:18:34.229Z",
+    "is_superuser": true,
+    "email": "a@a.com",
     "name": "",
     "is_active": true,
     "is_staff": true,
