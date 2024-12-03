@@ -3,7 +3,6 @@ from django.db import models
 from uploader.models import Image
 
 
-
 class Jogador(models.Model):
     nome = models.CharField(max_length=100)
     idade = models.IntegerField(blank=True, null=True)

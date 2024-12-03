@@ -6,22 +6,20 @@ from uploader.serializers import ImageSerializer, ImageListSerializer
 
 from core.models import Time, TimeJogador, Jogo
 
+class TimeJogadorSerializer(ModelSerializer):
+    class Meta:
+        model = TimeJogador
+        fields = ("data_inicio", "jogador", "time")
+        extra_kwargs = {
+            "jogador": {"required": False},  # jogador is not required during validation
+        }
+
+
 class JogoSerializer(ModelSerializer):
     class Meta:
         model = Jogo
         fields = ('__all__')
         
-class JogadorTimeSerializer(ModelSerializer):
-    id = IntegerField(source="jogador.id")
-    nome = CharField(source="jogador.nome")
-    idade = IntegerField(source="jogador.idade")
-    email = CharField(source="jogador.email")
-    numero = IntegerField(source="jogador.numero")
-    posicao = IntegerField(source="jogador.posicao")
-    foto = CharField(source="jogador.foto.url", required=False)
-    class Meta:
-        model = TimeJogador
-        fields = ('id', 'nome', 'idade', 'email', 'numero', 'posicao', 'foto')
 
 class TimeListSerializer(ModelSerializer):
     escudo = ImageListSerializer()
@@ -33,9 +31,9 @@ class TimeListSerializer(ModelSerializer):
             "escudo"
         ]
 
+
 class TimeDetailSerializer(ModelSerializer):
     escudo = ImageSerializer(required=False)
-    jogadores = JogadorTimeSerializer(many=True)
     ultimos_jogos = SerializerMethodField()
     jogos = SerializerMethodField()
 
@@ -68,7 +66,9 @@ class TimeDetailSerializer(ModelSerializer):
         # jogos = Jogo.objects.filter(Q(time_mandante__id=object.id | time_visitante__id=object.id))
         # return []
 
-    
+
+    jogadores = TimeJogadorSerializer(many=True, read_only=True)
+
     class Meta:
         model = Time
         fields: list[str] = [
@@ -82,9 +82,9 @@ class TimeDetailSerializer(ModelSerializer):
             "pontos", 
             "campeonato", 
             "escudo", 
-            "jogadores",
             "ultimos_jogos",
-            "jogos"
+            "jogos",
+            "jogadores",
         ]
 
 

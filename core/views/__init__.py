@@ -4,4 +4,3 @@ from .time import TimeViewSet
 from .rodada import RodadaViewSet
 from .jogo import JogoViewSet
 from .jogador import JogadorViewSet
-from .time_jogador import TimeJogadorViewSet

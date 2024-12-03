@@ -4,31 +4,27 @@ from uploader.models import Image
 from uploader.serializers import ImageListSerializer
 
 from core.models import Jogador, TimeJogador
+from core.serializers.time import TimeJogadorSerializer
 
-class TimeJogadorSerializer(ModelSerializer):
-    id = IntegerField(source="time.id")
-    nome = CharField(source="time.nome")
-    gols_pro = IntegerField(source="time.gols_pro")
-    gols_contra = IntegerField(source="time.gols_contra")
-    vitoria = IntegerField(source="time.vitoria")
-    empate = IntegerField(source="time.empate")
-    derrota = IntegerField(source="time.derrota")
-    pontos = IntegerField(source="time.pontos")
-    campeonato = CharField(source="time.campeonato")
-    escudo = CharField(source="time.escudo.url", required=False)
-
+class JogadorCreateUpdateSerializer(ModelSerializer):
+    times = TimeJogadorSerializer(many=True)
     class Meta:
-        model = TimeJogador
-        fields = (
-            'id', 'nome', 'gols_pro', 'gols_contra', 'vitoria', 'empate',
-            'derrota', 'pontos', 'campeonato', 'escudo',
-        )
+        model = Jogador
+        fields = ("nome", "idade", "email", "posicao", "numero", "times")
 
+    def create(self, validated_data):
+        print(validated_data)
+        times_data = validated_data.pop("times")
+        jogador = Jogador.objects.create(**validated_data)
+        print(jogador, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+        for time_data in times_data:
+            TimeJogador.objects.create(jogador=jogador, **time_data)
+        jogador.save()
+        return jogador  
 
 class JogadorDetailSerializer(ModelSerializer):
     foto = ImageListSerializer(required=False)
-    times = TimeJogadorSerializer(many=True)
-
+    times = TimeJogadorSerializer(many=True, read_only=True,)
     class Meta:
         model = Jogador
         fields: list[str] = [
@@ -39,11 +35,12 @@ class JogadorDetailSerializer(ModelSerializer):
             "posicao",
             "numero",
             "foto",
-            "times",
+            "times"
         ]
 
 
 class JogadorWriteSerializer(ModelSerializer):
+    times = TimeJogadorSerializer(many=True)
     foto_attachment_key = SlugRelatedField(
         source="foto",
         queryset=Image.objects.all(),
@@ -61,5 +58,5 @@ class JogadorWriteSerializer(ModelSerializer):
             "posicao",
             "numero",
             "foto_attachment_key",
-            "times",
+            "times"
         ]

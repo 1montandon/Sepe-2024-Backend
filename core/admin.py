@@ -52,8 +52,21 @@ class UserAdmin(BaseUserAdmin):
 
 admin.site.register(models.User, UserAdmin)
 admin.site.register(models.Campeonato)
-admin.site.register(models.Time)
 admin.site.register(models.Rodada)
 admin.site.register(models.Jogo)
-admin.site.register(models.Jogador)
-admin.site.register(models.TimeJogador)
+from core.models import TimeJogador
+
+
+class TimeJogadorInline(admin.TabularInline):
+    model = TimeJogador
+    extra = 1 # Quantidade de itens adicionais
+
+
+@admin.register(models.Time)
+class TimeAdmin(admin.ModelAdmin):
+    inlines = [TimeJogadorInline]
+
+
+@admin.register(models.Jogador)
+class JogadorAdmin(admin.ModelAdmin):
+    inlines = [TimeJogadorInline]

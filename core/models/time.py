@@ -1,6 +1,7 @@
 from django.db import models
 from uploader.models import Image
 from core.models import Campeonato
+from core.models.jogador import Jogador
 
 
 class Time(models.Model):
@@ -23,4 +24,8 @@ class Time(models.Model):
     
     def __str__(self):
         return f"{self.nome} ({self.id})"
-    
+
+class TimeJogador(models.Model):
+    data_inicio = models.DateField(auto_now_add=True)
+    jogador = models.ForeignKey(Jogador, on_delete=models.CASCADE, related_name="times")
+    time = models.ForeignKey(Time, on_delete=models.CASCADE, related_name="jogadores")
