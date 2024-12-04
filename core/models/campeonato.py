@@ -6,4 +6,4 @@ class Campeonato(models.Model):
     mata_mata = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"{self.nome} ({self.id}) {self.mata_mata}"
+        return f"{self.nome} ({self.ano}) - fase mata-mata? - {self.mata_mata}"

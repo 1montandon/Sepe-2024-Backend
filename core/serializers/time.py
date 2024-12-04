@@ -100,4 +100,4 @@ class TimeWriteSerializer(ModelSerializer):
     
     class Meta:
         model = Time
-        fields: list[str] = ["nome", "gols_pro", "gols_contra", "vitoria", "empate", "derrota", "pontos", "campeonato", "escudo_attachment_key", "escudo"]
+        fields: list[str] = ["nome",  "campeonato", "escudo_attachment_key", "escudo", "gols_pro", "gols_contra", "vitoria", "empate", "derrota", "pontos"]
