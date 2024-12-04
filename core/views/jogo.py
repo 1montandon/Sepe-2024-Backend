@@ -18,11 +18,26 @@ class JogoViewSet(ModelViewSet):
         return JogoWriteSerializer    
 
     @action(detail=False, methods=['post'])
-    def gerar_finais(self, pk=None):
-        campeonato = Campeonato.objects.get(id=1)
+    def gerar_semifinais(self, pk=None):
+        campeonato = Campeonato.objects.order_by('-id').first()
         rodada = Rodada.objects.create(numero_rodada=len(Rodada.objects.all()), campeonato=campeonato)
         times_ordenados = Time.objects.order_by('-pontos')
         Jogo.objects.create(time_mandante=times_ordenados[0], time_visitante=times_ordenados[3], rodada=rodada, tipo_jogo=Jogo.opcoes_de_jogos.SEMI, data='2022-12-12', horario='12:00')
         Jogo.objects.create(time_mandante=times_ordenados[1], time_visitante=times_ordenados[2], rodada=rodada, tipo_jogo=Jogo.opcoes_de_jogos.SEMI, data='2022-12-12', horario='12:00')
+        
+        return Response(status=status.HTTP_201_CREATED)
+    
+    @action(detail=False, methods=['post'])
+    def gerar_finais(self, pk=None):
+        campeonato = Campeonato.objects.order_by('-id').first()
+        rodada = Rodada.objects.create(numero_rodada=len(Rodada.objects.all()), campeonato=campeonato)
+        
+        vencedores = []
+        for jogo in Jogo.objects.filter(tipo_jogo=Jogo.opcoes_de_jogos.SEMI):
+            if jogo.vencedor is not None:
+                vencedores.append(jogo.vencedor)    
+
+
+        Jogo.objects.create(time_mandante=vencedores[0], time_visitante=vencedores[1], rodada=rodada, tipo_jogo=Jogo.opcoes_de_jogos.FINAL, data='2022-12-12', horario='12:00')
         
         return Response(status=status.HTTP_201_CREATED)
