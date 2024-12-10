@@ -21,6 +21,14 @@ class JogadorCreateUpdateSerializer(ModelSerializer):
             TimeJogador.objects.create(jogador=jogador, **time_data)
         jogador.save()
         return jogador  
+    
+    def update(self, jogador, validated_data):
+        times_data = validated_data.pop("times")
+        if times_data:
+            jogador.times.all().delete()
+            for time_data in times_data:
+                TimeJogador.objects.create(jogador=jogador, **time_data)
+        return super().update(jogador, validated_data)
 
 class JogadorDetailSerializer(ModelSerializer):
     foto = ImageListSerializer(required=False)
