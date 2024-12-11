@@ -6,6 +6,7 @@ from django.contrib.auth.models import (
     AbstractBaseUser,
     BaseUserManager,
     PermissionsMixin,
+    Group
 )
 from django.db import models
 
@@ -21,6 +22,10 @@ class UserManager(BaseUserManager):
             raise ValueError("Users must have an email address.")
 
         user = self.model(email=self.normalize_email(email), **extra_fields)
+        group = Group.objects.get(name='Default')
+        user.groups.add(group)
+
+        
         user.set_password(password)
         user.save(using=self._db)
 
