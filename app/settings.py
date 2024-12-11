@@ -144,8 +144,9 @@ else:
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(hours=8),
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=30),
+    "ACCESS_TOKEN_LIFETIME": timedelta(hours=300),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=300),
+    "TOKEN_OBTAIN_SERIALIZER": "app.token.MyTokenObtainPairSerializer",
 }
 
 SPECTACULAR_SETTINGS = {

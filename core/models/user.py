@@ -9,6 +9,8 @@ from django.contrib.auth.models import (
     Group
 )
 from django.db import models
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 
 
 class UserManager(BaseUserManager):
@@ -20,16 +22,13 @@ class UserManager(BaseUserManager):
         """Create, save and return a new user."""
         if not email:
             raise ValueError("Users must have an email address.")
-
+    
         user = self.model(email=self.normalize_email(email), **extra_fields)
-        group = Group.objects.get(name='Default')
-        user.groups.add(group)
-
-        
         user.set_password(password)
         user.save(using=self._db)
 
         return user
+
 
     def create_superuser(self, email, password):
         """Create, save and return a new superuser."""
@@ -55,8 +54,20 @@ class User(AbstractBaseUser, PermissionsMixin):
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
 
+    def get_groups(self):
+        """Return a comma-separated string of the user's groups."""
+        return ", ".join(group.name for group in self.groups.all())
+
     class Meta:
         """Meta options for the model."""
 
         verbose_name = "Usuário"
         verbose_name_plural = "Usuários"
+
+
+@receiver(post_save, sender=User)
+def add_group(sender, instance, created, **kwargs):
+    """Add user to the 'Default' group upon creation."""
+    if created:  # Ensures this only runs when a user is created
+        group = Group.objects.get(name='Default')
+        instance.groups.add(group)

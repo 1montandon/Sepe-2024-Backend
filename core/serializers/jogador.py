@@ -16,7 +16,6 @@ class JogadorCreateUpdateSerializer(ModelSerializer):
         print(validated_data)
         times_data = validated_data.pop("times")
         jogador = Jogador.objects.create(**validated_data)
-        print(jogador, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
         for time_data in times_data:
             TimeJogador.objects.create(jogador=jogador, **time_data)
         jogador.save()
