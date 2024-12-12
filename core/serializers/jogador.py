@@ -3,7 +3,7 @@ from rest_framework.serializers import ModelSerializer, SlugRelatedField, CharFi
 from uploader.models import Image
 from uploader.serializers import ImageListSerializer
 
-from core.models import Jogador, TimeJogador
+from core.models import Jogador, TimeJogador, Jogo
 from core.serializers.time import TimeJogadorSerializer
 
 class JogadorCreateUpdateSerializer(ModelSerializer):
@@ -31,7 +31,9 @@ class JogadorCreateUpdateSerializer(ModelSerializer):
 
 class JogadorDetailSerializer(ModelSerializer):
     foto = ImageListSerializer(required=False)
-    times = TimeJogadorSerializer(many=True, read_only=True,)
+    times = TimeJogadorSerializer(many=True, read_only=True)
+    gols = SerializerMethodField()
+
     class Meta:
         model = Jogador
         fields: list[str] = [
@@ -42,8 +44,36 @@ class JogadorDetailSerializer(ModelSerializer):
             "posicao",
             "numero",
             "foto",
-            "times"
+            "times",
+            "gols",
         ]
+
+    def get_gols(self, obj):
+        jogos = Jogo.objects.all()  # Busca todos os jogos
+        gols = []
+        for jogo in jogos:
+            # Confirme que 'gols' é uma lista válida
+            jogo_gols = jogo.gols or []  # Define uma lista vazia se 'gols' for None
+
+            # Filtra os gols que pertencem ao jogador
+            # gols_do_jogador = [gol for gol in jogo_gols if gol.get("jogador") == obj.id] - [<expressão> for <variável> in <iterável> if <condição opcional>] 
+            # Esse tipo de for é chamado de list comprehension em Python. É uma forma concisa e eficiente de criar listas com base em uma iteração.
+            gols_do_jogador = []
+            for gol in jogo_gols:
+                if gol.get("jogador") == obj.id:
+                    gols_do_jogador.append(gol)
+
+
+            for gol in gols_do_jogador:
+                gols.append({
+                    "data": jogo.data.strftime("%d/%m/%Y"),
+                    "time": gol["time"],
+                    "gol_pro": gol["gol_pro"],
+                    "endereco": jogo.endereco,
+                    "tipo_jogo": jogo.tipo_jogo,
+                })
+
+        return gols
 
 
 class JogadorWriteSerializer(ModelSerializer):
