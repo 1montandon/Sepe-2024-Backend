@@ -13,6 +13,7 @@ class TimeJogadorSerializer(ModelSerializer):
         extra_kwargs = {
             "jogador": {"required": False},  # jogador is not required during validation
         }
+        depth = 2
 
 
 class JogoSerializer(ModelSerializer):

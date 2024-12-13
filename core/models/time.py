@@ -13,7 +13,7 @@ class Time(models.Model):
         on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        default=None,
+        default="https://i.ibb.co/VDwW5Rv/28-289657-espn-soccer-team-logo-default.png",
     )
     gols_pro = models.IntegerField(blank=True, null=True, default=0)
     gols_contra = models.IntegerField(blank=True, null=True, default=0)

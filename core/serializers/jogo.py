@@ -59,7 +59,8 @@ class JogoDetailSerializer(ModelSerializer):
             "gols",
             "cartoes",
             "vencedor",
-            "tipo_jogo"
+            "tipo_jogo",
+            "jogo_realizado"
         ]
 
 class JogoWriteSerializer(ModelSerializer):
@@ -75,7 +76,8 @@ class JogoWriteSerializer(ModelSerializer):
             "time_visitante",
             "gols",
             "cartoes",
-            "tipo_jogo"
+            "tipo_jogo",
+            "jogo_realizado"
 
         ]
     def create(self, validated_data):
@@ -106,6 +108,8 @@ class JogoWriteSerializer(ModelSerializer):
         instance.time_visitante = validated_data.get('time_visitante', instance.time_visitante)
         instance.gols = validated_data.get('gols', instance.gols)
         instance.cartoes = validated_data.get('cartoes', instance.cartoes)
+        instance.tipo_jogo = validated_data.get('tipo_jogo', instance.tipo_jogo)
+        instance.jogo_realizado = validated_data.get('jogo_realizado', instance.jogo_realizado)
 
         # for attr, value in validated_data.items():
         #     setattr(instance, attr, value)

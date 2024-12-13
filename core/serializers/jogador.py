@@ -4,7 +4,7 @@ from uploader.models import Image
 from uploader.serializers import ImageListSerializer
 
 from core.models import Jogador, TimeJogador, Jogo
-from core.serializers.time import TimeJogadorSerializer
+from core.serializers.time import TimeJogadorSerializer, TimeDetailSerializer
 
 class JogadorCreateUpdateSerializer(ModelSerializer):
     times = TimeJogadorSerializer(many=True)
