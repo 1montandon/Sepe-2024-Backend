@@ -66,8 +66,12 @@ class JogadorDetailSerializer(ModelSerializer):
 
             for gol in gols_do_jogador:
                 gols.append({
+                    "jogo": jogo.id,
                     "data": jogo.data.strftime("%d/%m/%Y"),
                     "time": gol["time"],
+                    "time_mandante": (jogo.time_mandante.nome, jogo.time_mandante.id),
+                    "time_visitante": (jogo.time_visitante.nome , jogo.time_visitante.id),
+                    "time_mandante": (jogo.time_mandante.nome, jogo.time_mandante.id),
                     "gol_pro": gol["gol_pro"],
                     "endereco": jogo.endereco,
                     "tipo_jogo": jogo.tipo_jogo,
