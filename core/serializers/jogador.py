@@ -4,7 +4,7 @@ from uploader.models import Image
 from uploader.serializers import ImageListSerializer
 
 from core.models import Jogador, TimeJogador, Jogo
-from core.serializers.time import TimeJogadorSerializer, TimeDetailSerializer
+from core.serializers.time import TimeJogadorSerializer, TimeDetailSerializer, TimeListSerializer
 
 class JogadorCreateUpdateSerializer(ModelSerializer):
     times = TimeJogadorSerializer(many=True)
@@ -69,9 +69,8 @@ class JogadorDetailSerializer(ModelSerializer):
                     "jogo": jogo.id,
                     "data": jogo.data.strftime("%d/%m/%Y"),
                     "time": gol["time"],
-                    "time_mandante": (jogo.time_mandante.nome, jogo.time_mandante.id),
-                    "time_visitante": (jogo.time_visitante.nome , jogo.time_visitante.id),
-                    "time_mandante": (jogo.time_mandante.nome, jogo.time_mandante.id),
+                    "time_visitante": TimeListSerializer(jogo.time_visitante).data ,
+                    "time_mandante":  TimeListSerializer(jogo.time_mandante).data ,
                     "gol_pro": gol["gol_pro"],
                     "endereco": jogo.endereco,
                     "tipo_jogo": jogo.tipo_jogo,

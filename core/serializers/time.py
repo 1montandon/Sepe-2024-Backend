@@ -39,29 +39,30 @@ class TimeDetailSerializer(ModelSerializer):
     jogos = SerializerMethodField()
 
     def get_jogos(self, object):
-        mandante = object.jogos_mandante.order_by('-id')
-        visitante = object.jogos_visitante.order_by('-id')
-        jogos = list(chain(mandante, visitante)) #Antes era so usado para pegar o length do jogos
-        # Use JogoSerializer to serialize each Jogo instance
+        mandante = object.jogos_mandante.filter(jogo_realizado=True).order_by('-id')
+        visitante = object.jogos_visitante.filter(jogo_realizado=True).order_by('-id')
+        jogos = list(chain(mandante, visitante))
         serializer = JogoSerializer(jogos, many=True)
-        print("AQUI BURRO",serializer, serializer.data)
         return serializer.data
+
     
 
     def get_ultimos_jogos(self, object):
-        mandante = object.jogos_mandante.order_by('-id') if len(object.jogos_mandante.order_by('-id')) < 5 else object.jogos_mandante.order_by('-id')[:5]
-        visitante = object.jogos_visitante.order_by('-id') if len(object.jogos_visitante.order_by('-id')) < 5 else object.jogos_visitante.order_by('-id')[:5]
+        mandante = object.jogos_mandante.filter(jogo_realizado=True).order_by('-id')[:5]
+        visitante = object.jogos_visitante.filter(jogo_realizado=True).order_by('-id')[:5]
         jogos = list(chain(mandante, visitante))
+        
         resultados = []
         for jogo in jogos:
-            print(jogo.vencedor, object)
             if jogo.vencedor == object:
                 resultados.append(1)
-            elif jogo.vencedor == None:
+            elif jogo.vencedor is None:
                 resultados.append(0)
             else:
-                resultados.append({-1})
+                resultados.append(-1)
+        
         return resultados
+
         
         # print(object.id)
         # jogos = Jogo.objects.filter(Q(time_mandante__id=object.id | time_visitante__id=object.id))

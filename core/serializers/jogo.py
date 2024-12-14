@@ -76,6 +76,7 @@ class JogoWriteSerializer(ModelSerializer):
             "time_visitante",
             "gols",
             "cartoes",
+            "vencedor",
             "tipo_jogo",
             "jogo_realizado"
 
