@@ -4,10 +4,10 @@ from uploader.models import Image
 from uploader.serializers import ImageListSerializer
 
 from core.models import Jogador, TimeJogador, Jogo
-from core.serializers.time import TimeJogadorSerializer, TimeDetailSerializer, TimeListSerializer
+from core.serializers.time import TimeJogadorWriteSerializer, TimeDetailSerializer, TimeListSerializer, TimeJogadorSerializer
 
 class JogadorCreateUpdateSerializer(ModelSerializer):
-    times = TimeJogadorSerializer(many=True)
+    times = TimeJogadorWriteSerializer(many=True)
     class Meta:
         model = Jogador
         fields = ("nome", "idade", "email", "posicao", "numero", "times")
@@ -22,10 +22,24 @@ class JogadorCreateUpdateSerializer(ModelSerializer):
         return jogador  
     
     def update(self, jogador, validated_data):
+        print(validated_data)
         times_data = validated_data.pop("times")
         if times_data:
+            print(times_data)
             jogador.times.all().delete()
             for time_data in times_data:
+                print(time_data)
+                TimeJogador.objects.create(jogador=jogador, **time_data)
+        return super().update(jogador, validated_data)
+    
+    def partial_update(self, jogador, validated_data):
+        print("partial_update")
+        times_data = validated_data.pop("times")
+        if times_data:
+            print(times_data)
+            jogador.times.all().delete()
+            for time_data in times_data:
+                print(time_data)
                 TimeJogador.objects.create(jogador=jogador, **time_data)
         return super().update(jogador, validated_data)
 

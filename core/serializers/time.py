@@ -15,6 +15,14 @@ class TimeJogadorSerializer(ModelSerializer):
         }
         depth = 2
 
+class TimeJogadorWriteSerializer(ModelSerializer):
+    class Meta:
+        model = TimeJogador
+        fields = ("data_inicio", "jogador", "time")
+        extra_kwargs = {
+            "jogador": {"required": False},  # jogador is not required during validation
+        }
+
 
 class JogoSerializer(ModelSerializer):
     class Meta:
@@ -69,7 +77,17 @@ class TimeDetailSerializer(ModelSerializer):
         # return []
 
 
-    jogadores = TimeJogadorSerializer(many=True, read_only=True)
+    jogadores = SerializerMethodField()
+
+    def get_jogadores(self, object):
+        jogadores = list()
+
+        for time_jogador in object.jogadores.all():
+            jogador = time_jogador.jogador
+            if jogador.times.all()[len(jogador.times.all()) - 1].time.id == object.id:
+                jogadores.append(time_jogador)
+
+        return TimeJogadorSerializer(jogadores, many=True).data
 
     class Meta:
         model = Time
