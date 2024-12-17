@@ -20,8 +20,6 @@ class JogoViewSet(ModelViewSet):
     @action(detail=False, methods=['post'])
     def gerar_semifinais(self, pk=None):
         campeonato = Campeonato.objects.order_by('-id').first()
-        campeonato.mata_mata = True
-        campeonato.save()
         rodada = Rodada.objects.create(numero_rodada=len(Rodada.objects.all()) + 1, campeonato=campeonato)
         times_ordenados = Time.objects.order_by('-pontos')
         Jogo.objects.create(time_mandante=times_ordenados[0], time_visitante=times_ordenados[3], rodada=rodada, tipo_jogo=Jogo.opcoes_de_jogos.SEMI, data='2022-12-12', horario='12:00')
@@ -33,8 +31,7 @@ class JogoViewSet(ModelViewSet):
     def gerar_finais(self, pk=None):
         campeonato = Campeonato.objects.order_by('-id').first()
         rodada = Rodada.objects.create(numero_rodada=len(Rodada.objects.all()) + 1, campeonato=campeonato)
-        campeonato.mata_mata = True
-        campeonato.save()
+
         
         vencedores = []
         for jogo in Jogo.objects.filter(tipo_jogo=Jogo.opcoes_de_jogos.SEMI):
