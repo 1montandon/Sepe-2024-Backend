@@ -32,7 +32,7 @@ class Jogador(models.Model):
         ALA = 3, "Ala"
         PIVO = 4, "Pivo"
 
-    posicao = models.CharField( max_length=10,choices=PosicaoJogador.choices)
+    posicao = models.IntegerField(choices=PosicaoJogador.choices)
 
     def __str__(self):
         return f"{self.nome} ({self.id})"
